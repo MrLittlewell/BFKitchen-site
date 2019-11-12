@@ -127,11 +127,14 @@
   <script src="js/jquery.nice-select.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/parallax.js"></script>
-  <script src="cart/App.2bf48a15.js"></script>
+  <script src="cart/App.6fcc4feb.js"></script>
   <script src="js/init.js"></script>
   <script>
     $(document).ready(function() {
-      $('select').niceSelect();
+      if ($(window).width() >= 960) {
+        $('select').niceSelect();
+      }
+      
     });
   </script>
 

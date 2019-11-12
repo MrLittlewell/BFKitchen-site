@@ -669,10 +669,9 @@ body .our-program-section .blog-image img {
 .site-main-banner .banner-inner-content {
     top: 50%;
     transform: translate(3%, 20%);
-    padding-top: 200px;
+    padding-top: 150px;
     left: 50%;
     right: 0;
-    text-align: center;
     color: #fff;
     max-width: 670px;
     padding-bottom: 31px;
@@ -697,6 +696,11 @@ body .our-program-section .blog-image img {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 5px;
+    text-align: center;
+}
+.banner-inner-content > div:nth-child(1) > p:nth-child(2) {
+    line-height: normal;
+    font-size: 28px;
 }
 
 .collapsible-body {
@@ -707,8 +711,9 @@ body .our-program-section .blog-image img {
     width: 100%;
 }
 
-nav .brand-logo {
-    padding-left: 90px;
+body nav div #logo-container img {
+    width: 70px;
+    transform: none;    
 }
 
 #options-tabs {
@@ -893,7 +898,19 @@ button[disabled], html input[disabled] {
         margin: 10px 0 0;
     }
 }
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: auto;
+        transform: none;
+    }
+}
 @media (max-width: 800px) {
+    nav .brand-logo {
+        left: 47%;
+    }
+    body nav div #logo-container img {
+        width: 50px;
+    }
     .top-header,
     .nav-wrapper.container-fluid div:nth-last-child(1) {
         display: none;
@@ -1129,6 +1146,21 @@ button[disabled], html input[disabled] {
     }
     .cart-container {
         padding: 0!important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .blog-post .blog-post-inner {
+        height: 390px;
+    }
+    .blog-post .blog-post-inner .blog-image img {
+        height: 380px;
+    }
+    .carousel {
+        height: 300px;
+    }
+    .section-main-content.col.s9 h2{
+        text-align: center;
+        font-size: 36px;
     }
 }
 .day-plan {
