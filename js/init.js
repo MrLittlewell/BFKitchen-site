@@ -3,6 +3,7 @@
 
     $('.button-collapse').sideNav();
     $('.carousel').carousel();
+    $('#loader').hide()
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
