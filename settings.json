@@ -1,0 +1,55 @@
+[{
+  "settings": {
+    "planOne": {
+      "name": "#Лайт1200",
+      "priceTwoDay": 6,
+      "priceFiveDay": 15,
+      "priceSevenDay": 21
+    },
+    "planTwo": {
+      "name": "#Баланс2000",
+      "priceTwoDay": 8,
+      "priceFiveDay": 20,
+      "priceSevenDay": 28
+    },
+    "planThree": {
+      "name": "#Мощные2500",
+      "priceTwoDay": 6,
+      "priceFiveDay": 15,
+      "priceSevenDay": 21
+    },
+    "planFour": {
+      "name": "#Vegan",
+      "priceTwoDay": 8,
+      "priceFiveDay": 20,
+      "priceSevenDay": 28
+    },
+    "planFive": {
+      "name": "#ПланПять",
+      "priceTwoDay": 10,
+      "priceFiveDay": 25,
+      "priceSevenDay": 30
+    }
+  },
+  "promoCodes": [{
+      "name": "First",
+      "value": 5
+    },
+    {
+      "name": "Second",
+      "value": 10
+    },
+    {
+      "name": "Third",
+      "value": 15
+    },
+    {
+      "name": "Fourth",
+      "value": 20
+    }
+  ],
+  "menu": {
+    "currnetWeek": {},
+    "nextWeek": {}
+  }
+}]

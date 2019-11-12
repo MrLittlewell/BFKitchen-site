@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BF kitchen | Здоровое питание в Гродно</title>
+    <meta name="description" content="Доставка правильного питания к вам в дом. Правильное питание - залог здоровья!"/>
+    <link rel="canonical" href="http://bfkitchen.by/"/>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="./js/jsondata.js"></script>
+</head>
+
+<body onload="load()">
+
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="top-header">
+                <div class="left-menu">
+                    <div class="container-fluid">
+                        <div class="top-left-navigation">
+                            <div class="top-navigation">
+                                <ul>
+                                    <li>
+                                        <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ДОСТАВКА</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#">КОНСУЛЬТАЦИЯ ДИЕТОЛОГА</a>
+                                    </li> -->
+                                    <li>
+                                        <a href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="top-right-social-icons">
+                            <div class="top-right-menu">
+                                <div class="social-icons">
+                                    <a href="#" target="_blank"><img src="./images/icons/vk_logo.png" width="17" height="17"></a>
+                                    <a href="#" target="_blank"><img src="./images/icons/instagram-logo.png" width="17" height="17"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrapper container-fluid">
+                <div>
+                    <a id="logo-container" href="/" class="brand-logo">LOGO</a>
+                    <ul id="nav-mobile" class="side-nav">
+                            <span class="menu-logo">
+                                    Menu
+                                  </span>
+                        <li><a href="./planone.html"><span class="planOneName"></span></a></li>
+                        <li><a href="./plantwo.html"><span class="planTwoName"></span></a></li>
+                        <li><a href="./planthree.html"><span class="planThreeName"></span></a></li>
+                        <li><a href="./planfour.html"><span class="planFourName"></span><img class="vegan-img" src="./images/icons/leaf.svg" alt="vegan"></a></li>
+                        <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a></li> -->
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse hamburger-icon"><i
+              class="material-icons">menu</i>
+            Меню
+          </a>
+                </div>
+                <div>
+                    <a href="./cart.html">
+                        <img src="./images/icons/shopping-cart.svg">
+                    </a>
+                </div>
+                <div><a href="./menu.html">Программы питания</a></div>
+            </div>
+        </nav>
+    </div>
+    <section class="site-main-banner site-inner-banner parallax-window" data-parallax="scroll" data-image-src="./images/program-image-95.jpg">
+        <div class="banner-inner-content">
+            <div class="container">
+                <h2><span class="planThreeName"></span></h2>
+            </div>
+        </div>
+    </section>
+    <section id="options-tabs">
+        <div class="row container">
+            <div class="section-main-content col s9">
+                <h3>Твой сбалансированный рацион</h3>
+            </div>
+            <div class="col s9">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab col s6"><a class="active" href="#option1">5 порций на 7 дней</a></li>
+                    <li class="tab col s6"><a href="#option2">5 порций на 5 дней</a></li>
+                </ul>
+            </div>
+            <div id="option1" class="col s9">
+                <p>
+                    5 приемов пищи. 7 дней в неделю. Регулярное сбалансированное питание поможет достичь лучших результатов!
+                </p>
+                <a href="#">
+                    <img src="images/5porcij.png">
+                </a>
+            </div>
+            <div id="option2" class="col s9">
+                <p>
+                    Слишком много еды? А как насчет 5 дней? Менее вкусно от этого не станет!
+                </p>
+                <a href="#">
+                    <img src="images/3porcii.png">
+                </a>
+            </div>
+            <div class="col s3">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li class="active">
+                        <div class="collapsible-header active">
+                            <i class="material-icons">expand_more</i> Комплект 5 порций на <span class="day-plan">2 дня</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="total-current-price">
+                                <h4>Стоимость комплекта: </h4>
+                                <p><span class="cost"><span class="pThreeTD"></span></span> BYN в неделю</p>
+                            </div>
+                            <div class="submit-button">
+                                <a class="btn btn-primarydark" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">expand_more</i> Комплект 5 порций на <span class="day-plan">5 дней</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="total-current-price">
+                                <h4>Стоимость комплекта: </h4>
+                                <p><span class="cost"><span class="pThreeFD"></span></span> BYN в неделю</p>
+                            </div>
+                            <div class="submit-button">
+                                <a class="btn btn-primarydark" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">expand_more</i> Комплект 5 порций на <span class="day-plan">7 дней</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="total-current-price">
+                                <h4>Стоимость комплекта: </h4>
+                                <p><span class="cost"><span class="pThreeSD"></span></span> BYN в неделю</p>
+                            </div>
+                            <div class="submit-button">
+                                <a class="btn btn-primarydark" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s9">
+                <h2>Примерное меню</h2>
+
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!">
+                        <img src="./images/slider-food/zavtrak/zavtrak-3.jpg">
+                        <p>Завтрак</p>
+                    </a>
+                    <a class="carousel-item" href="#one!"><img src="./images/slider-food/zavtrak/zavtrak-4.jpg">
+                        <p>Завтрак</p>
+                    </a>
+                    <a class="carousel-item" href="#two!"><img src="./images/slider-food/lanch/lanch-3.jpg">
+                        <p>Ланч</p>
+                    </a>
+                    <a class="carousel-item" href="#three!"><img src="./images/slider-food/obed/obed-3.jpg">
+                        <p>Обед</p>
+                    </a>
+                    <a class="carousel-item" href="#four!"><img src="./images/slider-food/poldnik/poldnik-3.jpg">
+                        <p>Полдник</p>
+                    </a>
+                    <a class="carousel-item" href="#five!"><img src="./images/slider-food/uzhin/uzhin-3.jpg">
+                        <p>Ужин</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col s4 footer-navigation">
+                    <div class="footer-menu">
+                        <h2>МЕНЮ</h2>
+                        <ul>
+                            <li><a href="./planone.html"><span class="planOneName"></span></a>
+                            </li>
+                            <li><a href="./plantwo.html"><span class="planTwoName"></span></a>
+                            </li>
+                            <li><a href="./planthree.html"><span class="planThreeName"></span></a>
+                            </li>
+                            <li><a href="./planfour.html"><span class="planFourName"></span><img class="vegan-img" src="./images/icons/leaf.svg" alt="vegan"></a>
+                            </li>
+                            <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s4 ">
+                    <div class="footer-menu">
+                        <h2>КОНТАКТЫ</h2>
+                        <p>ООО «ЧИПОТЛЕ» <br> ИНН: 55566667772</p>
+                        <p>Тел: +375 (29) 555-55-55 <br> <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="container">
+                <p>© 2019. Все права защищены. <a href="#">Условия доставки </a> <a href="#">Правила пользования</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="./settings.json"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/init.js"></script>
+
+</body>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BF kitchen | Здоровое питание в Гродно</title>
+  <meta name="description" content="Доставка правильного питания к вам в дом. Правильное питание - залог здоровья!"/>
+  <link rel="canonical" href="http://bfkitchen.by/"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script src="./js/jsondata.js"></script>
+</head>
+
+<body onload="load()">
+
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="top-header">
+        <div class="left-menu">
+          <div class="container-fluid">
+            <div class="top-left-navigation">
+              <div class="top-navigation">
+                <ul>
+                  <li>
+                    <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a>
+                  </li>
+                  <li>
+                    <a href="#">ДОСТАВКА</a>
+                  </li>
+                  <!-- <li>
+                      <a href="#">КОНСУЛЬТАЦИЯ ДИЕТОЛОГА</a>
+                  </li> -->
+                  <li>
+                    <a href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="top-right-social-icons">
+              <div class="top-right-menu">
+                <div class="social-icons">
+                  <a href="#" target="_blank"><img src="./images/icons/vk_logo.png" width="17" height="17"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-wrapper container-fluid">
+        <div>
+          <a id="logo-container" href="/" class="brand-logo">LOGO</a>
+          <ul id="nav-mobile" class="side-nav">
+            <span class="menu-logo">
+              Menu
+            </span>
+            <li><a href="./planone.html"><span class="planOneName"></span></a></li>
+            <li><a href="./plantwo.html"><span class="planTwoName"></span></a></li>
+            <li><a href="./planthree.html"><span class="planThreeName"></span></a></li>
+            <li><a href="./planfour.html"><span class="planFourName"></span><img class="vegan-img" src="./images/icons/leaf.svg" alt="vegan"></a></li>
+            <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a></li> -->
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse hamburger-icon"><i
+              class="material-icons">menu</i>
+            Меню
+          </a>
+        </div>
+        <div>
+          <a href="./cart.html">
+            <img src="./images/icons/shopping-cart.svg">
+          </a>
+
+        </div>
+        <div><a href="./menu.html">Программы питания</a></div>
+      </div>
+    </nav>
+  </div>
+  <section id="main-first-section" data-parallax="scroll" data-image-src="./images/main-banner-section.jpg">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="banner-content">
+          <img src="./images/icons/fork.svg" alt="food" />
+          <h1>Вкусно, полезно и удобно, с доставкой на дом</h1>
+          <div class="row center">
+            <h5 class="header col s12 light">От шеф-повара | Прямо с кухни | Натуральные продукты
+            </h5>
+          </div>
+          <div class="row center">
+            <a href="./menu.html" id="download-button"
+              class="btn-large waves-effect waves-light teal lighten-1">Смотреть меню</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="section-economy">
+    <div class="container">
+      <div class="section-main-content">
+        <h2>ЭКОНОМИМ ТВОЕ ВРЕМЯ!</h2>
+        <p>Зачем тратить часы на готовку? Вопрос питания решен! Мы привезем рацион на день прямо к тебе домой.
+        </p>
+      </div>
+      <div class="background-image">
+        <img src="images/banktak-left-section.png" alt="">
+      </div>
+      <div class="section-lower-content z-depth-3">
+        <h3>ГОТОВИМ ДЛЯ ТВОЕГО ЗДОРОВЬЯ!</h3>
+        <p>Мы за здоровый образ жизни! А он начинается с правильного питания. Наш шеф-повар приготовит любое полезное
+          блюдо.
+        </p>
+        <a href="./menu.html" class="btn-large waves-effect waves-light teal lighten-1">НАШЕ меню</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="programs">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Популярные программы питания</h2>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <div class="blog-post">
+            <div class="blog-post-inner light-blog-post">
+              <div class="blog-image">
+                <img src="./images/blog-post-95.jpg" alt="">
+              </div>
+              <div class="blog-title">
+                <h2 style="color:black"><span class="planOneName"></span></h2>
+                <p style="color:black">1200 ккал<br> Рекомендуется женщинам для похудения без вреда для здоровья.
+                </p>
+                <a href="./planone.html" class="btn-large waves-effect waves-light teal lighten-1">ПЕРЕЙТИ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="blog-post">
+            <div class="blog-post-inner light-blog-post">
+              <div class="blog-image">
+                <img src="./images/blog-post-85.jpg" alt="">
+              </div>
+              <div class="blog-title">
+                <h2 style="color:black"><span class="planTwoName"></span></h2>
+                <p style="color:black">2500 ккал<br> Для тех, кто хочет быть в форме или набирать мышечную массу.</p>
+                <a href="./plantwo.html" class="btn-large waves-effect waves-light teal lighten-1">ПЕРЕЙТИ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="load-more-button">
+        <a href="./menu.html" class="btn btn-primary">Все программы питания</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="options-tabs">
+    <div class="section-main-content">
+      <h3>КОМПЛЕКСЫ И ОПЦИИ ОТ НАС</h3>
+    </div>
+    <div class="row container">
+      <div class="col s12">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab col s6"><a class="active" href="#option1">Комплексы</a></li>
+          <li class="tab col s6"><a href="#option2">Опции</a></li>
+
+        </ul>
+      </div>
+      <div id="option1" class="col s12">
+        <p>
+          5 приемов пищи. 7 дней в неделю. Регулярное сбалансированное питание поможет достичь лучших результатов!
+        </p>
+        <a href="#">
+          <img src="images/5porcij.png">
+        </a>
+      </div>
+      <div id="option2" class="col s12">
+        <p>
+          Слишком много еды? А как насчет 5 дней? Менее вкусно от этого не станет!
+        </p>
+        <a href="#">
+          <img src="images/3porcii.png">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hobnka-section parallax-container" data-parallax="scroll"
+    data-image-src="./images/ping-banner-image.jpg">
+    <div class="container">
+      <div class="custext">
+        <h3>НОВИНКА</h3>
+        <h2>Паста с морепродуктами</h2>
+        <p>Долой однообразие: мы готовы удивлять тебя каждый день! Наш шеф-повар постоянно пробует новые рецепты. Все
+          сбалансированно, вкусно и полезно. С нами не заскучаешь!</p>
+        <a href="./menu.html">смотреть меню</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-info">
+    <div class="container">
+      <div class="service-info-inner">
+        <h2>ПОЧЕМУ МЫ?</h2>
+        <div class="row">
+          <div class="col s3">
+            <img src="./images/icons/image-1.svg" alt="" class="mf-kitchen-icon" style="max-width:  138px;">
+            <h3>Это полезно</h3>
+            <p>Никакого масла и добавок! Программы составляют профессиональные диетологи.</p>
+          </div>
+          <div class="col s3">
+            <img src="./images/icons/image-2.svg" alt="" class="mf-kitchen-icon" style="max-width:  138px;">
+            <h3>Это вкусно</h3>
+            <p>Мы докажем, что полезно и вкусно - это синонимы. Новое меню каждый день – никакого однообразия! </p>
+          </div>
+          <div class="col s3">
+            <img src="./images/icons/image-3.svg" alt="" class="mf-kitchen-icon" style="max-width:  138px;">
+            <h3>Это удобно</h3>
+            <p>Доставляем готовую еду до двери ежедневно. Тебе останется только разогреть. </p>
+          </div>
+          <div class="col s3">
+            <img src="./images/icons/image-4.svg" alt="" class="mf-kitchen-icon" style="max-width:  138px;">
+            <h3>Это универсально. </h3>
+            <p>Программы питания под любой стиль жизни! Похудение, спорт, сбалансированное питание с пользой для
+              здоровья - что выберешь ты? </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-contact-form-section" data-parallax="scroll" data-image-src="./images/contact-form-bg.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col s5 ">
+          <div class="section-inner-content z-depth-3">
+            <h2>Бесплатная консультация и поддержка диетолога 24/7</h2>
+            <p>Оформи заявку и почувствуй вкус своей жизни! Наш менеджер поможет тебе выбрать подходящую программу
+              питания.
+            </p>
+          </div>
+        </div>
+        <div class="col s7 ">
+          <div class="contact-form-container">
+
+            <form action="/api/send-mail" data-ajax="true" data-ajax-begin="onBeginDiet"
+              data-ajax-complete="onCompleteDiet" data-ajax-mode="replace" data-ajax-update="#loadingSpinnerP"
+              id="form0" method="post">
+              <div class="row" id="anketdiet">
+                <!-- <div class="col s4">
+                                    <input class="lastNameForm" id="lastNameForm" name="LastName" placeholder="Фамилия" type="text" value="">
+                                </div> -->
+                <div class="col s4">
+                  <input class="nameForm" id="nameForm" name="Name" placeholder="Имя" type="text" value="">
+                </div>
+                <!-- <div class="col s4">
+                                    <input class="secondName" id="secondName" name="SecondName" placeholder="Отчество" type="text" value="">
+                                </div> -->
+                <div class="col s4">
+                  <input type="tel" id="phoneForm" name="phoneForm" class="phoneForm" data-mask="+375 (99) 999-99-99"
+                    placeholder="Телефон">
+                </div>
+                <div class="col s4">
+                  <input class="emailForm" id="emailForm" name="Email" placeholder="E-mail" type="email" value="">
+                </div>
+                <!-- <div class="col s4">
+                                    <input class="ageForm" id="ageForm" name="Age" placeholder="Возраст" type="text" value="">
+                                </div> -->
+
+                <!-- <div class="col s4">
+                                    <input class="genderForm" id="genderForm" name="Sex" placeholder="Пол" type="text" value="">
+                                </div> -->
+                <!-- <div class="col s4">
+                                    <input class="heightForm" id="heightForm" name="Height" placeholder="Рост" type="text" value="">
+                                </div> -->
+                <!-- <div class="col s4">
+                                    <input class="weightForm" id="weightForm" name="Weight" placeholder="Вес" type="text" value="">
+                                </div> -->
+                <div class="clearfix"></div>
+                <div class="col s12">
+                  <div class="form-submit-button">
+                    <input type="submit" class="btn btn-primary" value="Бесплатная консультация" name="">
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s4 footer-navigation">
+          <div class="footer-menu">
+            <h2>МЕНЮ</h2>
+            <ul>
+              <li><a href="./planone.html"><span class="planOneName"></span></a>
+              </li>
+              <li><a href="./plantwo.html"><span class="planTwoName"></span></a>
+              </li>
+              <li><a href="./planthree.html"><span class="planThreeName"></span></a>
+              </li>
+              <li><a href="./planfour.html"><span class="planFourName"></span><img class="vegan-img" src="./images/icons/leaf.svg" alt="vegan"></a>
+              </li>
+              <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col s4 ">
+          <div class="footer-menu">
+            <h2>КОНТАКТЫ</h2>
+            <p>ООО «ЧИПОТЛЕ» <br> ИНН: 55566667772</p>
+
+            <p>Тел: +375 (29) 555-55-55 <br> <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower-footer">
+      <div class="container">
+        <p>© 2019. Все права защищены. <a href="#">Условия доставки </a> <a href="#">Правила пользования</a></p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="cart/src.32c80948.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
