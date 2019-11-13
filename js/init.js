@@ -3,7 +3,10 @@
 
     $('.button-collapse').sideNav();
     $('.carousel').carousel();
-    $('#loader').hide()
+    $('#loader').hide();
+    if (window.location.href.indexOf("textolite") > -1) {
+      $('.for-textolite').show()
+    }
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 

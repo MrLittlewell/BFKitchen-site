@@ -971,6 +971,7 @@ html input[disabled] {
 #nextweek>div {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .menus {
   background-color: #a4508b;
@@ -1008,6 +1009,21 @@ border-radius: 10px;
 }
 .menus .tabs {
   margin-bottom: 10px;
+}
+.menus .day__item li {
+  display: flex;
+  flex-direction: column;
+}
+.menus .days {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.for-textolite {
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
 }
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
