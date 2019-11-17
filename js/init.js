@@ -2,8 +2,17 @@
   $(function () {
 
     $('.button-collapse').sideNav();
-    $('.carousel').carousel();
+    $('.carousel').carousel({
+      indicators: true,
+    });
+    $('.carousel-nav .next').click(function() {
+      $('.carousel').carousel('next');
+    });
+    $('.carousel-nav .prev').click(function() {
+      $('.carousel').carousel('prev');
+    });
     $('#loader').hide();
+
     if (window.location.href.indexOf("textolite") > -1) {
       $('.for-textolite').show()
     }
