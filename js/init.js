@@ -5,10 +5,10 @@
     $('.carousel').carousel({
       indicators: true,
     });
-    $('.carousel-nav .next').click(function() {
+    $('.next').click(function() {
       $('.carousel').carousel('next');
     });
-    $('.carousel-nav .prev').click(function() {
+    $('.prev').click(function() {
       $('.carousel').carousel('prev');
     });
     $('#loader').hide();
