@@ -4,6 +4,7 @@
     $('.button-collapse').sideNav();
     $('.carousel').carousel({
       indicators: true,
+      noWrap: true,
     });
     $('.next').click(function() {
       $('.carousel').carousel('next');
@@ -12,6 +13,7 @@
       $('.carousel').carousel('prev');
     });
     $('#loader').hide();
+    $('.modal').modal();
 
     if (window.location.href.indexOf("textolite") > -1) {
       $('.for-textolite').show()
@@ -79,7 +81,25 @@ $('#order-form').submit(function(event) {
       processData: false,
       success: function(result) {
           $('#order-form input').val("");
-          alert('Ваша заявка отправлена')
+          $('#thanks').modal('open');
+          localStorage.clear();
+      },
+  });
+});
+$('#form-consult').submit(function(event) {
+
+  event.preventDefault();
+
+  $.ajax({
+      type: 'post',
+      url: $(this).attr('action'),
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(result) {
+          $('#form-consult input').val("");
+          $('#thanks').modal('open');
           localStorage.clear();
       },
   });

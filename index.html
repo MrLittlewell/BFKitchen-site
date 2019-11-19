@@ -223,25 +223,25 @@
         <div class="col s6 ">
           <div class="contact-form-container">
 
-            <form action="/api/send-mail" data-ajax="true" data-ajax-begin="onBeginDiet"
-              data-ajax-complete="onCompleteDiet" data-ajax-mode="replace" data-ajax-update="#loadingSpinnerP"
-              id="form0" method="post">
+            <form action="order.php" data-ajax="true" id="form-consult" method="post">
               <div class="row" id="anketdiet">
                 <!-- <div class="col s4">
                                     <input class="lastNameForm" id="lastNameForm" name="LastName" placeholder="Фамилия" type="text" value="">
                                 </div> -->
                 <div class="col s4">
-                  <input class="nameForm" id="nameForm" name="Name" placeholder="Имя" type="text" value="">
+                  <input class="nameForm" id="nameForm" name="Name" placeholder="Имя" type="text" >
                 </div>
                 <!-- <div class="col s4">
                                     <input class="secondName" id="secondName" name="SecondName" placeholder="Отчество" type="text" value="">
                                 </div> -->
                 <div class="col s4">
-                  <input type="tel" id="phoneForm" name="phoneForm" class="phoneForm" data-mask="+375 (99) 999-99-99"
-                    placeholder="Телефон">
+                  <input type="tel" id="phoneForm" name="phoneForm" class="phoneForm" placeholder="Телефон" required>
                 </div>
                 <div class="col s4">
-                  <input class="emailForm" id="emailForm" name="Email" placeholder="E-mail" type="email" value="">
+                  <input class="emailForm" id="emailForm" name="Email" placeholder="E-mail" type="email" required>
+                </div>
+                <div class="col s4" style="position: absolute; visibility: hidden; width: 0;">
+                  <input class="nameForm" id="comment" name="comment" type="text" value="КОНСУЛЬТАЦИЯ">
                 </div>
                 <!-- <div class="col s4">
                                     <input class="ageForm" id="ageForm" name="Age" placeholder="Возраст" type="text" value="">
@@ -259,7 +259,7 @@
                 <div class="clearfix"></div>
                 <div class="col s12">
                   <div class="form-submit-button">
-                    <input type="submit" class="btn btn-primary" value="Бесплатная консультация" name="">
+                    <button type="submit" class="btn btn-primary">Бесплатная консультация</button>
                   </div>
                 </div>
               </div>
@@ -310,6 +310,15 @@
     </div>
   </footer>
 
+  <div id="thanks" class="modal">
+    <div class="modal-content">
+      <h4>Заявка принята.</h4>
+      <p>В ближайшее время с Вами свяжется наш менеджер.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-close waves-effect waves-green btn-flat">Хорошо</a>
+    </div>
+  </div>
 
   <!--  Scripts-->
   <script src="js/jquery.js"></script>

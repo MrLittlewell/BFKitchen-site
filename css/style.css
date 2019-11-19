@@ -558,7 +558,7 @@ div.col:nth-child(2)>div:nth-child(1)>p:nth-child(3)>a:nth-child(2) {
 .btn:hover,
 .btn:visited,
 .bth:active {
-  background-color: #59557b94 !important;
+  background-color: #3e9445 !important;
 }
 
 .btn-large:hover,
@@ -888,7 +888,7 @@ div.col:nth-child(6)>h2:nth-child(1) {
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
-  background-image: linear-gradient(315deg, #63d471 0%, #3e9445 74%);
+  background: #3e9445;
 }
 
 .programm-cart {
@@ -916,12 +916,12 @@ footer {
 }
 
 .cart__order-button {
-  background-color: #63d471;
-  background-image: linear-gradient(315deg, #63d471 0%, #3e9445 74%);
+  background-color: #3e9445;
+  /* background-image: linear-gradient(315deg, #63d471 0%, #3e9445 74%); */
   border-radius: 5px;
   color: white;
   border: none;
-  height: 36px;
+  height: 39px;
   line-height: 36px;
   padding: 0 2rem;
 }
@@ -1280,8 +1280,8 @@ body .form-area {
   .col.s4 input {
     background: #a69d9d9e !important;
     padding-left: 20px !important;
-    width: 95%;
     margin: 0 0 10px !important;
+    box-sizing: border-box;
   }
 
   .col.s4 input::placeholder {
@@ -1401,6 +1401,7 @@ body .form-area {
   .cart__order-button {
     width: 100%;
     height: 55px;
+    margin-top: 20px;
   }
 
   #cart-promo {
@@ -1490,6 +1491,22 @@ body .form-area {
   .col.s4 input {
     border-radius: 5px;
   }
+  #cart-promo {
+    position: absolute;
+    top: -110px;
+  }
+  .check-code {
+    top: -107px;
+  }
+  div.input-field:nth-child(2) {
+    margin-top: 50px!important;
+  }
+  #thanks a {
+    width: 100%;
+    text-align: center;
+    background:#3e9445;
+    color:white;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1509,6 +1526,7 @@ body .form-area {
     text-align: center;
     font-size: 36px;
   }
+  
 }
 
 .day-plan {
