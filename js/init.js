@@ -4,7 +4,6 @@
     $('.button-collapse').sideNav();
     $('.carousel').carousel({
       indicators: true,
-      noWrap: true,
     });
     $('.next').click(function() {
       $('.carousel').carousel('next');
