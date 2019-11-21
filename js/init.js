@@ -36,13 +36,13 @@ $('.collapsible li a').click(function () {
 })
 
 $('.lower-inner').hover(
-  function () {
-    $(this).addClass('hover')
-  },
-  function () {
-    $(this).removeClass('hover')
-  }
-)
+    function () {
+      $(this).addClass('hover')
+    },
+    function () {
+      $(this).removeClass('hover')
+    }
+);
 $('.our-program-section').hover(
   function () {
     $(this).addClass('hover')
@@ -103,3 +103,12 @@ $('#form-consult').submit(function(event) {
       },
   });
 });
+
+$(window).bind('mousewheel', function(event) {
+  if (event.originalEvent.wheelDelta >= 0) {
+      $('.navbar-fixed').attr("style","opacity: 1; transition: .5s;").fadeIn(500);
+  }
+  else {
+      $('.navbar-fixed').attr("style","opacity: 0; transition: .5s;");
+  }
+  });
