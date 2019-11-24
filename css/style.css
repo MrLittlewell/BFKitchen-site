@@ -1214,6 +1214,7 @@ body .form-area {
   #logo-container {
     transform: none;
     background: none;
+    padding-left: 0;
   }
   body nav div #logo-container img {
     width: 50px;

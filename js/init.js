@@ -17,6 +17,19 @@
     if (window.location.href.indexOf("textolite") > -1) {
       $('.for-textolite').show()
     }
+
+    if ($(window).width() >= 960) {
+      var lastScrollTop = 0;
+      $(window).scroll(function(event){
+      var st = $(this).scrollTop();
+      if (st > lastScrollTop){
+        $('.navbar-fixed').attr("style","opacity: 0; transition: .5s; top: -100px;");
+      } else {
+        $('.navbar-fixed').attr("style","opacity: 1; transition: .5s; top: 0;").fadeIn(500);
+      }
+      lastScrollTop = st;
+    });
+    }
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -113,13 +126,5 @@ $('#form-consult').submit(function(event) {
 //   }
 //   });
 
-  var lastScrollTop = 0;
-$(window).scroll(function(event){
-var st = $(this).scrollTop();
-if (st > lastScrollTop){
-  $('.navbar-fixed').attr("style","opacity: 0; transition: .5s; top: -100px;");
-} else {
-  $('.navbar-fixed').attr("style","opacity: 1; transition: .5s; top: 0;").fadeIn(500);
-}
-lastScrollTop = st;
-});
+
+
