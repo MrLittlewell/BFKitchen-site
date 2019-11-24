@@ -11,9 +11,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link rel="stylesheet" href="css/nice-select.css">
-  <link rel="stylesheet" href="cart/App.9cb242d2.css">
-  <link rel="stylesheet" href="cart/style.682f6044.css">
 
   <script src="./js/jsondata.js"></script>
 </head>
@@ -81,9 +78,19 @@
       </div>
     </nav>
   </div>
-  <div class="container">
-    <div id="react-cart"></div>
-  </div>
+    <div class="container dostavka">
+        <h1>Доставка и оплата</h1>
+        <p> 1. Оплатить рацион можно во время первой доставки наличными либо картой
+        (выбирается при оформлении заказа через сайт);</p>
+        <p>2. Выберите наиболее удобный интервал доставки! Утро (06:00-12:00);</p>
+        <p>4. Бесплатная доставка осуществляется по городу Гродно. Также в бесплатную
+        доставку включены такие районы как: Погораны, Коробчицы, Ольшанка, Зарица,
+        Барановичи;</p>
+        <p>5. Стоимость доставки за пределами выше указанных населенных пунктов
+        рассчитываем индивидуально, в зависимости от расстояния;</p>
+        <p>6. Курьер уведомляет о доставке через смс;</p>
+        <p>7. Рационы доставляются через каждые 2 дня!</p>
+    </div>
 
   <footer>
     <div class="container">
@@ -138,18 +145,8 @@
 
   <!--  Scripts-->
   <script src="js/jquery.js"></script>
-  <script src="js/jquery.nice-select.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/parallax.js"></script>
-  <script src="cart/App.ff420e68.js"></script>
   <script src="js/init.js"></script>
-  <script>
-    $(document).ready(function () {
-      if ($(window).width() >= 960) {
-        $('select').niceSelect();
-      }
-
-    });
-  </script>
 
 </body>

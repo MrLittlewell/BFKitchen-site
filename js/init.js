@@ -104,11 +104,22 @@ $('#form-consult').submit(function(event) {
   });
 });
 
-$(window).bind('mousewheel', function(event) {
-  if (event.originalEvent.wheelDelta >= 0) {
-      $('.navbar-fixed').attr("style","opacity: 1; transition: .5s;").fadeIn(500);
-  }
-  else {
-      $('.navbar-fixed').attr("style","opacity: 0; transition: .5s;");
-  }
-  });
+// $(window).bind('mousewheel', function(event) {
+//   if (event.originalEvent.wheelDelta >= 0) {
+//       $('.navbar-fixed').attr("style","opacity: 1; transition: .5s; top: 0;").fadeIn(500);
+//   }
+//   else {
+//       $('.navbar-fixed').attr("style","opacity: 0; transition: .5s; top: -100px;");
+//   }
+//   });
+
+  var lastScrollTop = 0;
+$(window).scroll(function(event){
+var st = $(this).scrollTop();
+if (st > lastScrollTop){
+  $('.navbar-fixed').attr("style","opacity: 0; transition: .5s; top: -100px;");
+} else {
+  $('.navbar-fixed').attr("style","opacity: 1; transition: .5s; top: 0;").fadeIn(500);
+}
+lastScrollTop = st;
+});

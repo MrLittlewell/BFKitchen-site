@@ -22,6 +22,24 @@ body {
   background-color: #f6f6f6;
   background-image: linear-gradient(315deg, #fff 0%, #f4f4f4 74%);
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3e9445;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e94456b;
+}
 
 #loader {
   position: absolute;
@@ -582,7 +600,9 @@ div.col:nth-child(2)>div:nth-child(1)>p:nth-child(3)>a:nth-child(2) {
 
 #logo-container {
   display: flex;
-
+  padding-left: 10px;
+  transform: scale(1.5) translate(-5px, -24px);
+  background-color: white;
 }
 
 .nav-wrapper.container-fluid a {
@@ -791,7 +811,6 @@ body .our-program-section .blog-image img {
 
 body nav div #logo-container img {
   width: 50px;
-  transform: scale(1.5) translateY(-14px);
 }
 
 #options-tabs {
@@ -1148,7 +1167,10 @@ body .form-area {
 .custext {
   margin-top: 50px;  
 }
-
+.container.rules p,
+.container.dostavka p{
+  line-height: 28px;;
+}
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1189,7 +1211,10 @@ body .form-area {
   .banner-content {
     margin-top: 0;
   }
-  
+  #logo-container {
+    transform: none;
+    background: none;
+  }
   body nav div #logo-container img {
     width: 50px;
     transform: scale(1.1) translateY(0);
