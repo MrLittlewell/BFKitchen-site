@@ -227,7 +227,7 @@ nav .button-collapse {
 
 .banner-content {
   max-width: 780px;
-  margin-top: 160px;
+  margin-top: 80px;
   margin-bottom: 100px;
   color: var(--white-color);
 }
@@ -1386,6 +1386,11 @@ body .form-area {
     width: 100%;
   }
 
+  label {
+    font-size: 18px !important;
+    color: var(--dark-blue) !important;
+  }
+
   .our-contact-form-section {
     padding-bottom: 0;
     background-size: auto !important;
@@ -1397,7 +1402,6 @@ body .form-area {
   }
 
   .col.s4 input {
-    background: #a69d9d9e !important;
     padding-left: 20px !important;
     margin: 0 0 10px !important;
     box-sizing: border-box;
@@ -1630,8 +1634,14 @@ body .form-area {
     top: -107px;
   }
 
+
+
   div.input-field:nth-child(2) {
     margin-top: 50px !important;
+  }
+
+  #anketdiet>div:nth-child(2) {
+    margin-top: 10px !important;
   }
 
   #thanks a {
@@ -1679,6 +1689,7 @@ body .form-area {
 
   .blog-post .blog-post-inner .blog-image img {
     height: 380px;
+    width: auto;
   }
 
   .carousel {

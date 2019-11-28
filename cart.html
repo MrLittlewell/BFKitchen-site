@@ -12,7 +12,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="css/nice-select.css">
-  <link rel="stylesheet" href="cart/App.9cb242d2.css">
+  <link rel="stylesheet" href="cart/App.66694ab2.css">
   <link rel="stylesheet" href="cart/style.682f6044.css">
 
   <script src="./js/jsondata.js"></script>
@@ -37,7 +37,7 @@
                       <a href="#">КОНСУЛЬТАЦИЯ ДИЕТОЛОГА</a>
                   </li> -->
                   <li>
-                    <a href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+                    <a class="waves-effect waves-light modal-trigger" href="#callback">ПЕРЕЗВОНИТЕ МНЕ</a>
                   </li>
                 </ul>
               </div>
@@ -119,7 +119,8 @@
     </div>
     <div class="lower-footer">
       <div class="container">
-        <p>© 2019. Все права защищены. <a href="./dostavka.html">Условия доставки </a> <a href="./pravila.html">Правила пользования</a></p>
+        <p>© 2019. Все права защищены. <a href="./dostavka.html">Условия доставки </a> <a href="./pravila.html">Правила
+            пользования</a></p>
 
       </div>
     </div>
@@ -136,12 +137,36 @@
     </div>
   </div>
 
+  <div id="callback" class="modal w-30">
+    <div class="modal-content">
+      <h4>Оставьте заявку</h4>
+      <blockquote>
+        И наш менеджер свяжется с вами!
+      </blockquote>
+      <form class="col s12">
+        <div class="input-field col s12">
+          <input class="nameForm validate" id="nameForm" name="Name" type="text" required>
+          <label class="active" for="nameForm">Ваше имя</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="tel" id="phoneForm" name="phoneForm" class="phoneForm validate" data-mask="+375(00) 000-00-00"
+            required>
+          <label class="active" for="phoneForm">Телефон</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
+  </div>
   <!--  Scripts-->
   <script src="js/jquery.js"></script>
   <script src="js/jquery.nice-select.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/parallax.js"></script>
-  <script src="cart/App.ff420e68.js"></script>
+  <script src="cart/App.35f228fd.js"></script>
+  <script src="js/jquery.mask.js"></script>
   <script src="js/init.js"></script>
   <script>
     $(document).ready(function () {

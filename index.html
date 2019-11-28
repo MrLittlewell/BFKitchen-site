@@ -83,7 +83,7 @@
       </div>
     </nav>
   </div>
-  <section id="main-first-section" data-parallax="scroll" data-image-src="./images/backgrounds/main-bg-1.jpeg">
+  <section id="main-first-section" data-parallax="scroll" data-image-src="./images/main-bg.jpg">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="banner-content">
@@ -399,6 +399,8 @@
   <script src="js/jquery.mask.js"></script>
   <script src="js/init.js"></script>
   <script>
-    new WOW().init();
+    if ($(window).width() >= 960) {
+      new WOW().init();
+    }
   </script>
 </body>

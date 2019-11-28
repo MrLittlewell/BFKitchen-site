@@ -40,8 +40,8 @@ function load() {
     $('.pOneFD').replaceWith(`${pOneFiveDay}`)
     $('.pOneSD').replaceWith(`${pOneSevenDay}`)
     $('.pOneTDpd').replaceWith(`${pOneTwoDay / 2}`)
-    $('.pOneFDpd').replaceWith(`${pOneFiveDay / 5}`)
-    $('.pOneSDpd').replaceWith(`${pOneSevenDay / 7}`)
+    $('.pOneFDpd').replaceWith(`${pOneFiveDay / 4}`)
+    $('.pOneSDpd').replaceWith(`${pOneSevenDay / 6}`)
     $('.pOneAverage').replaceWith(`${pOneTwoDay / 2}`)
 
     $('.planTwoName').replaceWith(`${pTwoName}`)
@@ -49,8 +49,8 @@ function load() {
     $('.pTwoFD').replaceWith(`${pTwoFiveDay}`)
     $('.pTwoSD').replaceWith(`${pTwoSevenDay}`)
     $('.pTwoTDpd').replaceWith(`${pTwoTwoDay / 2}`)
-    $('.pTwoFDpd').replaceWith(`${pTwoFiveDay / 5}`)
-    $('.pTwoSDpd').replaceWith(`${pTwoSevenDay / 7}`)
+    $('.pTwoFDpd').replaceWith(`${pTwoFiveDay / 4}`)
+    $('.pTwoSDpd').replaceWith(`${pTwoSevenDay / 6}`)
     $('.pTwoAverage').replaceWith(`${pTwoTwoDay / 2}`)
 
     $('.planThreeName').replaceWith(`${pThreeName}`)
@@ -58,8 +58,8 @@ function load() {
     $('.pThreeFD').replaceWith(`${pThreeFiveDay}`)
     $('.pThreeSD').replaceWith(`${pThreeSevenDay}`)
     $('.pThreeTDpd').replaceWith(`${pThreeTwoDay / 2}`)
-    $('.pThreeFDpd').replaceWith(`${pThreeFiveDay / 5}`)
-    $('.pThreeSDpd').replaceWith(`${pThreeSevenDay / 7}`)
+    $('.pThreeFDpd').replaceWith(`${pThreeFiveDay / 4}`)
+    $('.pThreeSDpd').replaceWith(`${pThreeSevenDay / 6}`)
     $('.pThreeAverage').replaceWith(`${pThreeTwoDay / 2}`)
 
     $('.planFourName').replaceWith(`${pFourName}`)
@@ -67,8 +67,8 @@ function load() {
     $('.pFourFD').replaceWith(`${pFourFiveDay}`)
     $('.pFourSD').replaceWith(`${pFourSevenDay}`)
     $('.pFourTDpd').replaceWith(`${pFourTwoDay / 2}`)
-    $('.pFourFDpd').replaceWith(`${pFourFiveDay / 5}`)
-    $('.pFourSDpd').replaceWith(`${pFourSevenDay / 7}`)
+    $('.pFourFDpd').replaceWith(`${pFourFiveDay / 4}`)
+    $('.pFourSDpd').replaceWith(`${pFourSevenDay / 6}`)
     $('.pFourAverage').replaceWith(`${pFourTwoDay / 2}`)
 
     $('.planFiveName').replaceWith(`${pFiveName}`)

@@ -30,7 +30,6 @@
         lastScrollTop = st;
       });
     }
-    M.updateTextFields();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
