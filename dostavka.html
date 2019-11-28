@@ -34,7 +34,7 @@
                       <a href="#">КОНСУЛЬТАЦИЯ ДИЕТОЛОГА</a>
                   </li> -->
                   <li>
-                    <a href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+                    <a class="waves-effect waves-light modal-trigger" href="#callback">ПЕРЕЗВОНИТЕ МНЕ</a>
                   </li>
                 </ul>
               </div>
@@ -78,19 +78,19 @@
       </div>
     </nav>
   </div>
-    <div class="container dostavka">
-        <h1>Доставка и оплата</h1>
-        <p> 1. Оплатить рацион можно во время первой доставки наличными либо картой
-        (выбирается при оформлении заказа через сайт);</p>
-        <p>2. Выберите наиболее удобный интервал доставки! Утро (06:00-12:00);</p>
-        <p>4. Бесплатная доставка осуществляется по городу Гродно. Также в бесплатную
-        доставку включены такие районы как: Погораны, Коробчицы, Ольшанка, Зарица,
-        Барановичи;</p>
-        <p>5. Стоимость доставки за пределами выше указанных населенных пунктов
-        рассчитываем индивидуально, в зависимости от расстояния;</p>
-        <p>6. Курьер уведомляет о доставке через смс;</p>
-        <p>7. Рационы доставляются через каждые 2 дня!</p>
-    </div>
+  <div class="container dostavka">
+    <h1>Доставка и оплата</h1>
+    <p> 1. Оплатить рацион можно во время первой доставки наличными либо картой
+      (выбирается при оформлении заказа через сайт);</p>
+    <p>2. Выберите наиболее удобный интервал доставки! Утро (06:00-12:00);</p>
+    <p>4. Бесплатная доставка осуществляется по городу Гродно. Также в бесплатную
+      доставку включены такие районы как: Погораны, Коробчицы, Ольшанка, Зарица,
+      Барановичи;</p>
+    <p>5. Стоимость доставки за пределами выше указанных населенных пунктов
+      рассчитываем индивидуально, в зависимости от расстояния;</p>
+    <p>6. Курьер уведомляет о доставке через смс;</p>
+    <p>7. Рационы доставляются через каждые 2 дня!</p>
+  </div>
 
   <footer>
     <div class="container">
@@ -126,7 +126,8 @@
     </div>
     <div class="lower-footer">
       <div class="container">
-        <p>© 2019. Все права защищены. <a href="./dostavka.html">Условия доставки </a> <a href="./pravila.html">Правила пользования</a></p>
+        <p>© 2019. Все права защищены. <a href="./dostavka.html">Условия доставки </a> <a href="./pravila.html">Правила
+            пользования</a></p>
 
       </div>
     </div>
@@ -135,12 +136,36 @@
 
   <div id="thanks" class="modal">
     <div class="modal-content">
-      <h4>Спасибо за заказ!</h4>
-      <p>Заявка принята. В ближайшее время с Вами свяжется наш менеджер.</p>
+      <h4>Заявка принята.</h4>
+      <p>В ближайшее время с Вами свяжется наш менеджер.</p>
     </div>
     <div class="modal-footer">
-      <a href="/" class="modal-close waves-effect waves-green btn-flat">Хорошо</a>
+      <a href="#" class="modal-close waves-effect waves-green btn-flat">Хорошо</a>
     </div>
+  </div>
+
+  <div id="callback" class="modal w-30">
+    <div class="modal-content">
+      <h4>Оставьте заявку</h4>
+      <blockquote>
+        И наш менеджер свяжется с вами!
+      </blockquote>
+      <form class="col s12">
+        <div class="input-field col s12">
+          <input class="nameForm validate" id="nameForm" name="Name" type="text" required>
+          <label class="active" for="nameForm">Ваше имя</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="tel" id="phoneForm" name="phoneForm" class="phoneForm validate" data-mask="+375(00) 000-00-00"
+            required>
+          <label class="active" for="phoneForm">Телефон</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
   </div>
 
   <!--  Scripts-->

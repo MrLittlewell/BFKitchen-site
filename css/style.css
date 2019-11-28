@@ -22,6 +22,7 @@ body {
   background-color: #f6f6f6;
   background-image: linear-gradient(315deg, #fff 0%, #f4f4f4 74%);
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -37,6 +38,7 @@ body {
   background: #3e9445;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #3e94456b;
 }
@@ -615,9 +617,12 @@ div.col:nth-child(2)>div:nth-child(1)>p:nth-child(3)>a:nth-child(2) {
 }
 
 .blog-post .blog-title {
+  background: #ffffff78;
+  border-radius: 20px;
+  padding: 20px;
   position: absolute;
   top: 77px;
-  color: #fff;
+  color: var(--dark-blue);
   max-width: 394px;
   left: 18%;
   right: 0;
@@ -1012,11 +1017,10 @@ html input[disabled] {
 }
 
 .menus {
-  background-image: linear-gradient(315deg, #49b994 0%,#59557b94 74%);
-color:white;
-border-radius: 10px;
-box-shadow: 0 24px 38px 3px
-rgba(0,0,0,0.14),0 9px 46px 8px rgba(0,0,0,0.12),0 11px 15px -7px rgba(0,0,0,0.2);
+  background-image: linear-gradient(315deg, #49b994 0%, #59557b94 74%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
 .menus .tabs {
@@ -1160,17 +1164,54 @@ body .form-area {
 .footer-menu p {
   font-size: 14px;
 }
-#programs > div > div.load-more-button > a:hover {
-  background: #3e9445!important;
+
+#programs>div>div.load-more-button>a:hover {
+  background: #3e9445 !important;
   border: none;
 }
+
 .custext {
-  margin-top: 50px;  
+  margin-top: 50px;
 }
+
 .container.rules p,
-.container.dostavka p{
-  line-height: 28px;;
+.container.dostavka p {
+  line-height: 28px;
+  ;
 }
+
+.total-current-price p:nth-last-child(1) {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.planone {
+  background-color: #f2cf07;
+  background-image: linear-gradient(315deg, #f2cf07 0%, #55d284 74%);
+}
+
+.plantwo {
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #fbc6e2 0%, #a88beb 74%);
+}
+
+.planthree {
+  background-color: #06bcfb;
+  background-image: linear-gradient(315deg, #06bcfb 0%, #3d6cbe 74%);
+}
+
+.planfour {
+  background-color: #f2cf07;
+  background-image: linear-gradient(315deg, #b8e683 0%, #55d284 74%);
+}
+
+.w-30 {
+  width: 30%;
+  min-width: 400px;
+}
+
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1208,14 +1249,17 @@ body .form-area {
   nav .brand-logo {
     left: 47%;
   }
+
   .banner-content {
     margin-top: 0;
   }
+
   #logo-container {
     transform: none;
     background: none;
     padding-left: 0;
   }
+
   body nav div #logo-container img {
     width: 50px;
     transform: scale(1.1) translateY(0);
@@ -1614,12 +1658,15 @@ body .form-area {
   #order-form>div:nth-child(4)>div.input-field.second-select {
     margin-top: 50px;
   }
+
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 0;
   }
+
   #anketdiet .btn {
     width: 100%;
   }
+
   .meat-button {
     margin-left: 20px;
   }
