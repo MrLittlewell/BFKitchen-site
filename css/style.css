@@ -1212,6 +1212,10 @@ body .form-area {
   min-width: 400px;
 }
 
+blockquote {
+  border-left: 5px solid #3d9445;
+}
+
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1389,6 +1393,7 @@ body .form-area {
   label {
     font-size: 18px !important;
     color: var(--dark-blue) !important;
+    width: 80% !important;
   }
 
   .our-contact-form-section {
