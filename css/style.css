@@ -350,6 +350,7 @@ nav .brand-logo {
   display: flex;
   align-content: center;
   justify-content: center;
+  align-items: center;
   height: 560px;
   overflow: hidden;
 }
@@ -620,11 +621,8 @@ div.col:nth-child(2)>div:nth-child(1)>p:nth-child(3)>a:nth-child(2) {
   background: #ffffff78;
   border-radius: 20px;
   padding: 20px;
-  position: absolute;
-  top: 77px;
   color: var(--dark-blue);
   max-width: 394px;
-  left: 18%;
   right: 0;
   font-size: 15px;
   text-align: center;
@@ -878,11 +876,14 @@ div.col:nth-child(6)>h2:nth-child(1) {
 #react-cart>div>div>div.form-area>form>div:nth-child(4)>div {
   margin: 0;
   width: 100%;
+  margin-right: 10px;
 }
 
-#cart-promo {
-  padding-left: 20px;
+body>div.navbar-fixed>nav>div.nav-wrapper.container-fluid>div:nth-child(2) {
+  margin-left: -10px;
 }
+
+#cart-promo {}
 
 .form-group.double>div {
   width: 100%;
@@ -1216,6 +1217,16 @@ blockquote {
   border-left: 5px solid #3d9445;
 }
 
+#options-tabs>div>div.col.s8>h2 {
+  color: var(--dark-blue);
+}
+
+#options-tabs>div>div.col.s8>p {
+  font-size: 14px;
+  width: 50%;
+  color: var(--dark-blue);
+}
+
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1540,10 +1551,6 @@ blockquote {
     right: 0;
   }
 
-  #react-cart>div>div>div.form-area>form>div:nth-child(4)>div {
-    margin-bottom: 10px;
-  }
-
   .form-group select {
     border-radius: 10px;
   }
@@ -1630,19 +1637,14 @@ blockquote {
     border-radius: 5px;
   }
 
-  #cart-promo {
-    position: absolute;
-    top: -110px;
-  }
+  #cart-promo {}
 
   .check-code {
-    top: -107px;
+    top: 73px;
   }
 
-
-
   div.input-field:nth-child(2) {
-    margin-top: 50px !important;
+    margin-top: 20px !important;
   }
 
   #anketdiet>div:nth-child(2) {
