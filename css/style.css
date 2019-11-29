@@ -328,7 +328,6 @@ nav .brand-logo {
 }
 
 .blog-post .blog-title {
-  top: 77px;
   color: var(--white-color);
   max-width: 394px;
   font-size: 15px;
@@ -353,6 +352,10 @@ nav .brand-logo {
   align-items: center;
   height: 560px;
   overflow: hidden;
+}
+
+#add-menu .our-program-section .blog-post .blog-title {
+  position: absolute;
 }
 
 .blog-post .blog-post-inner .blog-image img {
