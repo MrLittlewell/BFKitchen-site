@@ -403,22 +403,9 @@ nav .brand-logo {
   text-align: center;
 }
 
-.hobnka-section a {
-  color: #fff;
-  display: inline-block;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 18px;
-  border-bottom: 2px solid #fff;
-  border-bottom-color: rgb(255, 255, 255);
-  line-height: 1;
-  text-decoration: none;
-  transition: all 0.3s;
-  margin-top: 21px;
-}
 
 .custext p {
-  width: 60%;
+  width: 70%;
 }
 
 .custext .vegan-img {
@@ -944,6 +931,7 @@ body>div.navbar-fixed>nav>div.nav-wrapper.container-fluid>div:nth-child(2) {
 
 footer {
   border-top: 1px solid#cecdcd;
+  background: #fefefe;
 }
 
 .cart__order-button {
@@ -955,6 +943,7 @@ footer {
   height: 39px;
   line-height: 36px;
   padding: 0 2rem;
+  margin-top: 30px;
 }
 
 .promo-true {
@@ -1021,8 +1010,8 @@ html input[disabled] {
 }
 
 .menus {
-  background-image: linear-gradient(315deg, #49b994 0%, #59557b94 74%);
-  color: white;
+  background: #f9f9f9;
+  color: var(--dark-blue);
   border-radius: 10px;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
@@ -1031,16 +1020,21 @@ html input[disabled] {
   background: transparent;
 }
 
-.menus .tabs a {
+/* .menus .tabs a {
   color: white;
-}
+} */
 
 .menus .tabs .tab a:hover,
 .menus .tabs .tab a.active {
-  color: #59557b;
+  color: white;
+  background: #3d9445;
   font-weight: bold;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); */
+}
 
+.menus li.indicator {
+  display: none;
 }
 
 .menus h3 {
@@ -1085,7 +1079,7 @@ html input[disabled] {
 }
 
 .menus .tabs {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .menus .day__item li {
@@ -1176,6 +1170,10 @@ body .form-area {
 
 .custext {
   margin-top: 50px;
+  background: #ffffff78;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #03404f;
 }
 
 .container.rules p,
@@ -1191,7 +1189,7 @@ body .form-area {
   height: 0;
 }
 
-.planone {
+/* .planone {
   background-color: #f2cf07;
   background-image: linear-gradient(315deg, #f2cf07 0%, #55d284 74%);
 }
@@ -1209,7 +1207,7 @@ body .form-area {
 .planfour {
   background-color: #f2cf07;
   background-image: linear-gradient(315deg, #b8e683 0%, #55d284 74%);
-}
+} */
 
 .w-30 {
   width: 30%;
@@ -1230,6 +1228,23 @@ blockquote {
   color: var(--dark-blue);
 }
 
+.top-navigation ul li:nth-child(1) a {
+  padding-left: 5px;
+}
+
+#anketdiet input {
+  border-bottom: 1px solid #fafafa;
+  color: #fafafa;
+}
+
+#anketdiet label {
+  color: #fafafa;
+}
+
+.custext h3 {
+  color: #3d9445;
+}
+
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1242,9 +1257,6 @@ blockquote {
 }
 
 @media (max-width: 1200px) {
-  .blog-post .blog-title {
-    left: 13%;
-  }
 
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1268,8 +1280,16 @@ blockquote {
     left: 47%;
   }
 
+  #options-tabs>div>div.col.s8>p {
+    width: 100%;
+  }
+
   .banner-content {
-    margin-top: 0;
+    margin-top: 150px;
+  }
+
+  .banner-content h5 {
+    font-size: 20px;
   }
 
   #logo-container {
@@ -1308,7 +1328,13 @@ blockquote {
   }
 
   .banner-content h1 {
-    font-size: 28px;
+    font-size: 24px;
+    margin: 5px 0;
+  }
+
+  .banner-content svg {
+    width: 200px;
+    height: 200px;
   }
 
   #main-first-section {
