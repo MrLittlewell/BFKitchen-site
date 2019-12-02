@@ -1444,6 +1444,10 @@ blockquote {
     width: 80% !important;
   }
 
+  #main-first-section {
+    background-position: 42% !important;
+  }
+
   .our-contact-form-section {
     padding-bottom: 0;
     /* background-size: auto !important; */
