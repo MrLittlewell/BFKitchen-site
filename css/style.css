@@ -1241,12 +1241,12 @@ blockquote {
 }
 
 #anketdiet input {
-  border-bottom: 1px solid #fafafa;
-  color: #fafafa;
+  border-bottom: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 #anketdiet label {
-  color: #fafafa;
+  color: var(--dark-blue);
 }
 
 .custext h3 {

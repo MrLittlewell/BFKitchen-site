@@ -128,6 +128,7 @@ $('#callback form').submit(function (event) {
     cache: false,
     processData: false,
     success: function (result) {
+      $('#callback').modal('close');
       $('#form-consult input').val("");
       $('#thanks').modal('open');
       localStorage.clear();

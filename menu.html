@@ -504,13 +504,13 @@
       <blockquote>
         И наш менеджер свяжется с вами!
       </blockquote>
-      <form class="col s12">
+      <form class="col s12" action="recall.php" data-ajax="true" method="post">
         <div class="input-field col s12">
-          <input class="nameForm validate" id="nameForm" name="Name" type="text" required>
+          <input class="nameForm validate" id="nameForm" name="name" type="text" required>
           <label class="active" for="nameForm">Ваше имя</label>
         </div>
         <div class="input-field col s12">
-          <input type="tel" id="phoneForm" name="phoneForm" class="phoneForm validate" data-mask="+375(00) 000-00-00"
+          <input type="tel" id="phoneForm" name="phone" class="phoneForm validate" data-mask="+375(00) 000-00-00"
             required>
           <label class="active" for="phoneForm">Телефон</label>
         </div>
