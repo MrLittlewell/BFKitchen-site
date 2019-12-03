@@ -1283,6 +1283,20 @@ blockquote {
   }
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+  .banner-content {
+    margin-top: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+  }
+
+  .background-image img {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 800px) {
   nav .brand-logo {
     left: 47%;
@@ -1445,7 +1459,7 @@ blockquote {
   }
 
   #main-first-section {
-    background-position: 42% !important;
+    /* background-position: 42% !important; */
   }
 
   .our-contact-form-section {
@@ -1727,6 +1741,28 @@ blockquote {
 
   .meat-button {
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .banner-content {
+    margin-top: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+  }
+
+  #main-first-section {
+    height: 130vh;
+  }
+
+  .background-image img {
+    max-width: 420px;
+  }
+
+  .background-image {
+    position: absolute;
   }
 }
 
