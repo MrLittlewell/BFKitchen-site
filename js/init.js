@@ -140,6 +140,8 @@ $('#phoneForm').mask('+375(00) 000-00-00');
 
 $('.react-datepicker__input-container input').focus(function (e) {
   e.preventDefault();
-  console.log('fork');
   $(this).blur();
+})
+$('#order-form select').click(function () {
+  $(this).attr("required", "");
 })
