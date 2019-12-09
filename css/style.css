@@ -1232,7 +1232,7 @@ blockquote {
 
 #options-tabs>div>div.col.s8>p {
   font-size: 14px;
-  width: 50%;
+  width: 90%;
   color: var(--dark-blue);
 }
 
@@ -1262,9 +1262,13 @@ blockquote {
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 10px 0 0;
   }
+  .background-image img {
+    max-width: 750px;
+  }
+  
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1274,6 +1278,7 @@ blockquote {
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 10px 0 0;
   }
+  
 }
 
 @media only screen and (max-width: 992px) {

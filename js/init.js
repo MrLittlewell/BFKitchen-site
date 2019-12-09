@@ -138,6 +138,8 @@ $('#callback form').submit(function (event) {
 
 $('#phoneForm').mask('+375(00) 000-00-00');
 
+$('#cart-phone').mask('+375(00) 000-00-00');
+
 $('.react-datepicker__input-container input').focus(function (e) {
   e.preventDefault();
   $(this).blur();
