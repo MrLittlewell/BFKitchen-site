@@ -45,7 +45,7 @@ $('.collapsible li a').click(function () {
   }
   let costToJson = JSON.stringify(currentCost);
   localStorage.setItem("localPrice", costToJson);
-  document.location.replace("/cart.html");
+  document.location.replace("https://bfkitchen.by/cart/");
 })
 
 $('.lower-inner').hover(
@@ -77,7 +77,7 @@ $('.lower-inner a').click(function () {
   }
   let costToJson = JSON.stringify(currentCost);
   localStorage.setItem("localPrice", costToJson);
-  document.location.replace("/cart.html");
+  document.location.replace("https://bfkitchen.by/cart/");
 })
 
 $('#order-form').submit(function (event) {

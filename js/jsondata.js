@@ -1,5 +1,5 @@
 function load() {
-  var requestURL = 'settings.json';
+  var requestURL = 'settings.json' || 'settings.json';
   var request = new XMLHttpRequest();
   request.open('GET', requestURL);
   request.responseType = 'json';
