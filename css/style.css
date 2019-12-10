@@ -1253,6 +1253,11 @@ blockquote {
   color: #3d9445;
 }
 
+.menus .day__item li.desc {
+  font-size: 12px;
+  font-weight: normal;
+}
+
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1262,10 +1267,11 @@ blockquote {
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 10px 0 0;
   }
+
   .background-image img {
     max-width: 750px;
   }
-  
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1278,7 +1284,7 @@ blockquote {
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 10px 0 0;
   }
-  
+
 }
 
 @media only screen and (max-width: 992px) {

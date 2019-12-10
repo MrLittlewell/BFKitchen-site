@@ -2,909 +2,1019 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BF kitchen | Здоровое питание в Гродно</title>
-    <meta name="description" content="Доставка правильного питания к вам в дом. Правильное питание - залог здоровья!"/>
-    <link rel="canonical" href="http://bfkitchen.by/"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BF kitchen | Здоровое питание в Гродно</title>
+  <meta name="description" content="Доставка правильного питания к вам в дом. Правильное питание - залог здоровья!" />
+  <link rel="canonical" href="http://bfkitchen.by/" />
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <script src="./js/jsondata.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script src="./js/jsondata.js"></script>
 </head>
 
 <body onload="load()">
 
-    <div class="navbar-fixed">
-        <nav class="white" role="navigation">
-            <div class="top-header">
-                <div class="left-menu">
-                    <div class="container-fluid">
-                        <div class="top-left-navigation">
-                            <div class="top-navigation">
-                                <ul>
-                                    <li>
-                                        <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a>
-                                    </li>
-                                    <!-- <li>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="top-header">
+        <div class="left-menu">
+          <div class="container-fluid">
+            <div class="top-left-navigation">
+              <div class="top-navigation">
+                <ul>
+                  <li>
+                    <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a>
+                  </li>
+                  <!-- <li>
                                         <a href="#">ДОСТАВКА</a>
                                     </li> -->
-                                    <!-- <li>
+                  <!-- <li>
                                         <a href="#">КОНСУЛЬТАЦИЯ ДИЕТОЛОГА</a>
                                     </li> -->
-                                    <li>
-                                      <a class="waves-effect waves-light modal-trigger" href="#callback">ПЕРЕЗВОНИТЕ МНЕ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="top-right-social-icons">
-                            <div class="top-right-menu">
-                                <div class="social-icons">
-                                  <a href="#" target="_blank"><img src="./images/icons/telegram.svg" width="17" height="17"></a>
-                                  <a href="https://www.facebook.com/Bfkitchenby-100219991476826/" target="_blank"><img src="./images/icons/facebook.svg" width="17" height="17"></a>
-                                  <a href="https://www.instagram.com/bfkitchen.by/" target="_blank"><img src="./images/icons/instagram.svg" width="17" height="17"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  <li>
+                    <a class="waves-effect waves-light modal-trigger" href="#callback">ПЕРЕЗВОНИТЕ МНЕ</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="nav-wrapper container-fluid">
-                <div>
-                    <ul id="nav-mobile" class="side-nav">
-                            <span class="menu-logo">
-                                    Menu
-                                  </span>
-                        <li><a href="/planone"><span class="planOneName"></span></a></li>
-                        <li><a href="/plantwo"><span class="planTwoName"></span></a></li>
-                        <li><a href="/planthree"><span class="planThreeName"></span></a></li>
-                        <li><a href="/planfour"><span class="planFourName"></span><img class="vegan-img" src="./images/icons/leaf.svg" alt="vegan"></a></li>
-                        <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a></li> -->
-                    </ul>
-                    <a href="#" data-activates="nav-mobile" class="button-collapse hamburger-icon"><i
+            <div class="top-right-social-icons">
+              <div class="top-right-menu">
+                <div class="social-icons">
+                  <a href="#" target="_blank"><img src="./images/icons/telegram.svg" width="17" height="17"></a>
+                  <a href="https://www.facebook.com/Bfkitchenby-100219991476826/" target="_blank"><img
+                      src="./images/icons/facebook.svg" width="17" height="17"></a>
+                  <a href="https://www.instagram.com/bfkitchen.by/" target="_blank"><img
+                      src="./images/icons/instagram.svg" width="17" height="17"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-wrapper container-fluid">
+        <div>
+          <ul id="nav-mobile" class="side-nav">
+            <span class="menu-logo">
+              Menu
+            </span>
+            <li><a href="/planone"><span class="planOneName"></span></a></li>
+            <li><a href="/plantwo"><span class="planTwoName"></span></a></li>
+            <li><a href="/planthree"><span class="planThreeName"></span></a></li>
+            <li><a href="/planfour"><span class="planFourName"></span><img class="vegan-img"
+                  src="./images/icons/leaf.svg" alt="vegan"></a></li>
+            <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a></li> -->
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse hamburger-icon"><i
               class="material-icons">menu</i>
             Меню
           </a>
-                </div>
-                <div>
-                    <a id="logo-container" href="/" class="brand-logo"><img src="./images/logo-svg.svg" alt="logo"></a>
-                </div>
-                <div>
-                    <a href="/cart">
-                        <img src="./images/icons/shopping-cart.svg">
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <section class="site-main-banner site-inner-banner parallax-window" data-parallax="scroll" data-image-src="./images/2000.jpg">
-        <div class="banner-inner-content">
-            <div class="container">
-                <h2><span class="planTwoName"></span></h2>
-                <p>Рекомендуется мужчинам и женщинам для похудения без вреда для здоровья.</p>
-            </div>
         </div>
-    </section>
-    <section id="options-tabs">
+        <div>
+          <a id="logo-container" href="/" class="brand-logo"><img src="./images/logo-svg.svg" alt="logo"></a>
+        </div>
+        <div>
+          <a href="/cart">
+            <img src="./images/icons/shopping-cart.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section class="site-main-banner site-inner-banner parallax-window" data-parallax="scroll"
+    data-image-src="./images/2000.jpg">
+    <div class="banner-inner-content">
+      <div class="container">
+        <h2><span class="planTwoName"></span></h2>
+        <p>Рекомендуется мужчинам и женщинам для похудения без вреда для здоровья.</p>
+      </div>
+    </div>
+  </section>
+  <section id="options-tabs">
 
-        <div class="row container">
-            <div class="col s8">
-                <h2>Меню</h2>
-                <p>Фотографии блюд на сайте являются вариантом сервировки блюда. Внешний вид блюда может отличаться от
-                  фотографий на сайте.</p>
-                <div class="slider-relative">
-                    <div class="carousel">
-                        <a class="carousel-item" href="#one!"><img src="./images/slider-food/plantwo/1.png">
-                        </a>
-                        <a class="carousel-item" href="#two!"><img src="./images/slider-food/plantwo/2.png">
-                        </a>
-                        <a class="carousel-item" href="#three!"><img src="./images/slider-food/plantwo/3.png">
-                        </a>
-                        <a class="carousel-item" href="#four!"><img src="./images/slider-food/plantwo/4.png">
-                        </a>
-                        <a class="carousel-item" href="#five!"><img src="./images/slider-food/plantwo/5.png">
-                        </a>
-                    </div>
-                    <div class="carousel-nav">
-                        <div class="prev"><img src="./images/icons/back.svg" alt="prev"></div>
-                        <div class="next"><img src="./images/icons/next.svg" alt="next"></div>
-                    </div>
-                </div>
+    <div class="row container">
+      <div class="col s8">
+        <h2>Меню</h2>
+        <p>Фотографии блюд на сайте являются вариантом сервировки блюда. Внешний вид блюда может отличаться от
+          фотографий на сайте.</p>
+        <div class="slider-relative">
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./images/slider-food/plantwo/1.png">
+            </a>
+            <a class="carousel-item" href="#two!"><img src="./images/slider-food/plantwo/2.png">
+            </a>
+            <a class="carousel-item" href="#three!"><img src="./images/slider-food/plantwo/3.png">
+            </a>
+            <a class="carousel-item" href="#four!"><img src="./images/slider-food/plantwo/4.png">
+            </a>
+            <a class="carousel-item" href="#five!"><img src="./images/slider-food/plantwo/5.png">
+            </a>
+          </div>
+          <div class="carousel-nav">
+            <div class="prev"><img src="./images/icons/back.svg" alt="prev"></div>
+            <div class="next"><img src="./images/icons/next.svg" alt="next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header ">
+              <i class="material-icons">expand_more</i>План на<span class="day-plan">2 дня</span>
             </div>
-            <div class="col s4">
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li >
-                        <div class="collapsible-header ">
-                            <i class="material-icons">expand_more</i>План на<span class="day-plan">2 дня</span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="total-current-price">
-                                <h4>Стоимость комплекта: </h4>
-                                <p><span class="pTwoTDpd"></span> BYN в день</p>
-                                <hr>
-                                <p><span class="cost"><span class="pTwoTD"></span></span> BYN в неделю</p>
-                            </div>
-                            <div class="submit-button">
-                                <a class="btn btn-primarydark" href="#">Заказать</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <div class="collapsible-header active">
+            <div class="collapsible-body">
+              <div class="total-current-price">
+                <h4>Стоимость комплекта: </h4>
+                <p><span class="pTwoTDpd"></span> BYN в день</p>
+                <hr>
+                <p><span class="cost"><span class="pTwoTD"></span></span> BYN в неделю</p>
+              </div>
+              <div class="submit-button">
+                <a class="btn btn-primarydark" href="#">Заказать</a>
+              </div>
+            </div>
+          </li>
+          <li class="active">
+            <div class="collapsible-header active">
 
-                            <i class="material-icons">expand_more</i>План на<span class="day-plan">4 дня</span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="total-current-price">
-                                <h4>Стоимость комплекта: </h4>
-                                <p><span class="pTwoFDpd"></span> BYN в день</p>
-                                <hr>
-                                <p><span class="cost"><span class="pTwoFD"></span></span> BYN в неделю</p>
-                            </div>
-                            <div class="submit-button">
-                                <a class="btn btn-primarydark" href="#">Заказать</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
+              <i class="material-icons">expand_more</i>План на<span class="day-plan">4 дня</span>
+            </div>
+            <div class="collapsible-body">
+              <div class="total-current-price">
+                <h4>Стоимость комплекта: </h4>
+                <p><span class="pTwoFDpd"></span> BYN в день</p>
+                <hr>
+                <p><span class="cost"><span class="pTwoFD"></span></span> BYN в неделю</p>
+              </div>
+              <div class="submit-button">
+                <a class="btn btn-primarydark" href="#">Заказать</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
 
-                            <i class="material-icons">expand_more</i>План на<span class="day-plan">6 дней</span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="total-current-price">
-                                <h4>Стоимость комплекта: </h4>
-                                <p><span class="pTwoSDpd"></span> BYN в день</p>
-                                <hr>
-                                <p><span class="cost"><span class="pTwoSD"></span></span> BYN в неделю</p>
-                            </div>
-                            <div class="submit-button">
-                                <a class="btn btn-primarydark" href="#">Заказать</a>
-                            </div>
-                        </div>
-                    </li>
+              <i class="material-icons">expand_more</i>План на<span class="day-plan">6 дней</span>
+            </div>
+            <div class="collapsible-body">
+              <div class="total-current-price">
+                <h4>Стоимость комплекта: </h4>
+                <p><span class="pTwoSDpd"></span> BYN в день</p>
+                <hr>
+                <p><span class="cost"><span class="pTwoSD"></span></span> BYN в неделю</p>
+              </div>
+              <div class="submit-button">
+                <a class="btn btn-primarydark" href="#">Заказать</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="col s12 menus plantwo">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#curentweek">Текущая неделя</a></li>
+            <li class="tab col s3"><a href="#nextweek">Следующая неделя</a></li>
+          </ul>
+        </div>
+        <div id="curentweek" class="col s12">
+          <ul class="tabs">
+            <li class="tab col"><a href="#monday">ПН</a></li>
+            <li class="tab col"><a href="#tuesday">ВТ</a></li>
+            <li class="tab col"><a href="#wednesday">СР</a></li>
+            <li class="tab col"><a href="#thursday">ЧТ</a></li>
+            <li class="tab col"><a href="#friday">ПТ</a></li>
+            <li class="tab col"><a href="#saturday">СБ</a></li>
+            <li class="tab col"><a href="#sunday">ВС</a></li>
+          </ul>
+          <div id="monday">
+            <div class="for-textolite">Понедельник </div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Овсяная каша с медом и миндалем 290 гр.
+                  </li>
+                  <li class="desc">(крупа овсяная, молоко 2.5%, масло сливочное 82.5%, порошок стевии, соль морская,
+                    миндаль
+                    очищенный, мед натуральный) </li>
+                  <li>450 ккал. б 13, ж 17, у 59</li>
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Буррито с курицей и моцареллой 250 гр.
+                  </li>
+                  <li class="desc">(филе куриного бедра, филе куриной грудки, базилик сушеный, кукуруза
+                    консервированная, лук
+                    репчатый, морковь, тортилья пшеничная, перец болгарский, смесь прованских трав, соль морская, сыр
+                    моцарелла 45%, томатная паста, фасоль красная консервированная, чеснок)</li>
+                  <li>419 ккал. б 22, ж 16, у 45</li>
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Говядина по-индийски и рис с нутом 360 гр.
+                  </li>
+                  <li class="desc">(лопатка говяжья, куркума молотая, лимон, морковь, мука пшеничная в/с, порошок
+                    стевии, соль
+                    морская, соус табаско, специя тандури, томатная паста, рис , нут, прованские травы)</li>
+                  <li>520 ккал. б 18, ж 20, у 64</li>
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Творожный мусс с имбирем и медом 200 гр.
+                  </li>
+                  <li class="desc">(творог 5%, мед, хлопья овсяные, арахис, семена подсолнечника, какао-порошок)</li>
+                  <li>432 ккал. б 29, ж 16, у 43</li>
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Фрикадельки из говядины и курицы со спагетти 270 гр.</li>
+                  <li class="desc">(куриное филе, говяжья лопатка, яйцо куриное, молоко 2.5%, сухари панировочные, перец
+                    черный,
+                    соль морская)</li>
+                  <li>446 ккал. б 28, ж 13, у 53</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="tuesday">
+            <div class="for-textolite">Вторник</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Сырники с карамельным соусом 280 гр.
+                  </li>
+                  <li class="desc">(творог 5%, яйцо куриное, мука пшеничная, порошок стевии,
+                    соль морская, масло сливочное 82.5%, молоко 2.5%, молоко сгущеное вареное, сыр креметта)</li>
+                  <li>516 ккал. б 39, ж 17, у 49</li>
 
                 </ul>
-
-            </div>
-            <div class="col s12 menus plantwo">
-                <div class="col s12">
-                  <ul class="tabs">
-                    <li class="tab col s3"><a href="#curentweek">Текущая неделя</a></li>
-                    <li class="tab col s3"><a href="#nextweek">Следующая неделя</a></li>
-                  </ul>
-                </div>
-                <div id="curentweek" class="col s12">
-                  <ul class="tabs">
-                    <li class="tab col"><a href="#monday">ПН</a></li>
-                    <li class="tab col"><a href="#tuesday">ВТ</a></li>
-                    <li class="tab col"><a href="#wednesday">СР</a></li>
-                    <li class="tab col"><a href="#thursday">ЧТ</a></li>
-                    <li class="tab col"><a href="#friday">ПТ</a></li>
-                    <li class="tab col"><a href="#saturday">СБ</a></li>
-                    <li class="tab col"><a href="#sunday">ВС</a></li>
-                  </ul>
-                  <div id="monday">
-                    <div class="for-textolite">Понедельник&nbsp;</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Овсяная каша с медом и миндалем 290 гр.<i>(крупа овсяная, молоко 2.5%, масло сливочное 82.5%, порошок стевии, соль морская, миндаль очищенный, мед натуральный)&nbsp;</i></li>
-                              <li>450 ккал. б 13, ж 17, у 59</li>
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Буррито с курицей и моцареллой 250 гр.&nbsp;<i>(филе куриного бедра, филе куриной грудки, базилик сушеный, кукуруза консервированная, лук репчатый, морковь, тортилья пшеничная, перец болгарский, смесь прованских трав, соль морская, сыр моцарелла 45%, томатная паста, фасоль красная консервированная, чеснок)</i></li>
-                              <li>419 ккал. б 22, ж 16, у 45</li>
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Говядина по-индийски и рис с нутом 360 гр.&nbsp;<i>описание</i></li>
-                              <li>520 ккал. б 18, ж 20, у 64</li>
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Творожный мусс с имбирем и медом 200 гр.<i>описание</i></li>
-                              <li>432 ккал. б 29, ж 16, у 43</li>
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Фрикадельки из говядины и курицы со спагетти 270 гр.<i>описание</i></li>
-                              <li>446 ккал. б 28, ж 13, у 53</li>
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="tuesday">
-                    <div class="for-textolite">Вторник</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="wednesday">
-                    <div class="for-textolite">Среда</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="thursday">
-                    <div class="for-textolite">Четверг</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="friday">
-                    <div class="for-textolite">Пятница</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="saturday">
-                    <div class="for-textolite">Суббота</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="sunday">
-                    <div class="for-textolite">Воскресенье</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="nextweek" class="col s12">
-                  <ul class="tabs">
-                    <li class="tab col"><a href="#nextmonday">ПН</a></li>
-                    <li class="tab col"><a href="#nexttuesday">ВТ</a></li>
-                    <li class="tab col"><a href="#nextwednesday">СР</a></li>
-                    <li class="tab col"><a href="#nextthursday">ЧТ</a></li>
-                    <li class="tab col"><a href="#nextfriday">ПТ</a></li>
-                    <li class="tab col"><a href="#nextsaturday">СБ</a></li>
-                    <li class="tab col"><a href="#nextsunday">ВС</a></li>
-                  </ul>
-                  <div id="nextmonday">
-                    <div class="for-textolite">Понедельник</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="nexttuesday">
-                    <div class="for-textolite">Вторник</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="nextwednesday">
-                    <div class="for-textolite">Среда</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="nextthursday">
-                    <div class="for-textolite">Четверг</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="nextfriday">
-                    <div class="for-textolite">Пятница</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="nextsaturday">
-                    <div class="for-textolite">Суббота</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                  <div id="nextsunday">
-                    <div class="for-textolite">Воскресенье</div>
-                    <div class="days">
-                        <div class="day__item">
-                            <h3>Завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Второй завтрак</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Обед</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Полдник</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                          <div class="day__item">
-                            <h3>Ужин</h3>
-                            <ul>
-                              <li>Блюдо<i>описание</i></li>
-                              <li>Пищ.ценность</li>
-                              
-                            </ul>
-                          </div>
-                    </div>
-                  </div>
-                </div>
               </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Творожная запеканка с курагой и кедровыми орешками 200 гр.</li>
+                  <li class="desc">(фундук очищенный, крупа манная,
+                    курага, яйцо куриное, орех кешью, порошок стевии, соль морская, творог 5%)</li>
+                  <li>428 ккал. б 33, ж 19, у 30</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Кацудон из курицы с рисом и зеленью 300 гр.</li>
+                  <li class="desc">(филе куриное, сухари панко, мука пшеничная, яйцо
+                    куриное, соус терияки, рис, укроп, петрушка, соль морская)</li>
+                  <li>480 ккал. б 31, ж 15, у 54</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Шоколадно-творожные сырники из творога 150 гр. </li>
+                  <li class="desc">(творог 5%, мука пшеничная, яйцо куриное,
+                    какао-порошок, кокосовая стружка, порошок стевии)</li>
+                  <li>327 ккал. б 23, ж 12, у 30</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Говядина в соусе с черносливом и гречка 200 гр. </li>
+                  <li class="desc">(говядина вырезка, чернослив, морковь, лук
+                    репчатый, барбарис, томатная паста, гречка, соль морская)</li>
+                  <li>331 ккал. б 14, ж 11, у 43</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="wednesday">
+            <div class="for-textolite">Среда</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Нежный омлет с сырным соусом 270 гр.</li>
+                  <li class="desc">(яйцо куриное, филе куриное, лук репчатый, соль морская,
+                    масло сливочное 82.5%, молоко 2.5%, мука пшеничная в/с, орех мускатный, сыр моцарелла 45%, чеснок
+                    гранулированный)</li>
+                  <li>539 ккал.</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Бургер с курицей и гриль-соусом 250 гр. </li>
+                  <li class="desc">(филе куриного бедра, филе куриной грудки, булочка
+                    для бургера, лук репчатый, яйцо куриное, огурец маринованный, перец черный молотый, соль
+                    морская, гриль-соус, чеснок гранулированный)</li>
+                  <li>499 ккал.</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Паста Болоньезе с сыром 300 гр. </li>
+                  <li class="desc">(куриное филе, спагетти, томаты, морковь, моцарелла,
+                    томатная паста, лук репчатый, чеснок гранулированный, базилик сушенный, соль морская)</li>
+                  <li>376 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Чизкейк глинтвейн 215 гр.</li>
+                  <li class="desc">(сыр креметте, молоко 1.5%, хлопья овсяные, мед, масло кокосовое,
+                    вишня, агар-агар, порошок стевии, корица, бадьян, гвоздика)</li>
+                  <li>269 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Куриная грудка в имбирном маринаде с кускусом 300 гр.</li>
+                  <li class="desc">(куриное филе, корень имбиря, мед
+                    натуральный, соус соевый, перец черный молотый, чеснок гранулированный, кускус, тимьян, масло
+                    оливковое, соль морская)</li>
+                  <li>446 ккал. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="thursday">
+            <div class="for-textolite">Четверг</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Мультизлаковый сэндвич с моцареллой и ветчиной 170 гр. </li>
+                  <li class="desc">(хлеб мультизлаковый, ветчина из
+                    индейки, сыр креметте, сыр моцарелла 45%, огурцы маринованные, соус горчичный)</li>
+                  <li>513 ккал. </li>
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Мультизлаковые тосты и мусс из тунца с маринованными огурцами 155 гр.</li>
+                  <li class="desc">(мультизерновой хлеб, сыр
+                    креметте, огурцы маринованные, творог 5%, тунец в с/с, соль морская)</li>
+                  <li>396 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Ролл по-мексикански с говядиной 230 гр.</li>
+                  <li class="desc">(лопатка говяжья, филе куриное, томатная паста,
+                    прованские травы, стручковая фасоль, кукуруза консервированная, перец халапеньо, чеснок
+                    гранулированный, соль морская, тортилья пшеничная)</li>
+                  <li>392 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Творожное суфле с яблоком и корицей 200 гр. </li>
+                  <li class="desc">(творог 5%, яблоко, яйцо куриное, мука
+                    пшеничная, корица, изюм, лимон, порошок стевии, соль морская)</li>
+                  <li>292 ккал.</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Лазанья с курицей и соусом бешамель 220 гр.
+                  </li>
+                  <li class="desc">(лазанья
+                    лист, куриное филе, сыр моцарелла, молоко 2,5%, масло сливочное 82,5%, лук
+                    репчатый , мускатный орех, соль морская, крахмал кукурузный)</li>
+                  <li>424 ккал. </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="friday">
+            <div class="for-textolite">Пятница</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Гранола с грушевым йогуртом и грецким орехом
+                    240 гр. </li>
+                  <li class="desc">описание</li>
+                  <li>498 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Картофельные крокеты с беконом и сырным соусом 285 гр. </li>
+                  <li class="desc">описание</li>
+                  <li>498 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Куриные ежики под соусом бешамель с драниками 300 гр. </li>
+                  <li class="desc">описание</li>
+                  <li>469 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Фахитос с курицей 160 гр. </li>
+                  <li class="desc">описание</li>
+                  <li>395 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Курица в соусе терияки с лапшой удон 280 гр.</li>
+                  <li class="desc">описание</li>
+                  <li>398 ккал. </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="saturday">
+            <div class="for-textolite">Суббота</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Творожная запеканка с яблочно-облепиховым джемом 280 гр. </li>
+                  <li class="desc">описание</li>
+                  <li>463 ккал.</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Сытная запеканка с чеддером и моцареллой 220 гр.</li>
+                  <li class="desc">описание</li>
+                  <li>412 ккал.</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Говядина с ореховым соусом и фузилли 230 гр.</li>
+                  <li class="desc">описание</li>
+                  <li>408 ккал. </li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блинчик с курицей в сливочном соусе с фундуком 160 гр. </li>
+                  <li class="desc">описание</li>
+                  <li>356 ккал.</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Куриная котлета по-домашнему и гречка с овощами 290 гр.</li>
+                  <li class="desc">описание</li>
+                  <li>443 ккал.</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="sunday">
+            <div class="for-textolite">Воскресенье</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col s4 footer-navigation">
-                    <div class="footer-menu">
-                        <h2>МЕНЮ</h2>
-                        <ul>
-                            <li><a href="/planone"><span class="planOneName"></span></a>
-                            </li>
-                            <li><a href="/plantwo"><span class="planTwoName"></span></a>
-                            </li>
-                            <li><a href="/planthree"><span class="planThreeName"></span></a>
-                            </li>
-                            <li><a href="/planfour"><span class="planFourName"></span><img class="vegan-img" src="./images/icons/leaf.svg" alt="vegan"></a>
-                            </li>
-                            <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a>
+        <div id="nextweek" class="col s12">
+          <ul class="tabs">
+            <li class="tab col"><a href="#nextmonday">ПН</a></li>
+            <li class="tab col"><a href="#nexttuesday">ВТ</a></li>
+            <li class="tab col"><a href="#nextwednesday">СР</a></li>
+            <li class="tab col"><a href="#nextthursday">ЧТ</a></li>
+            <li class="tab col"><a href="#nextfriday">ПТ</a></li>
+            <li class="tab col"><a href="#nextsaturday">СБ</a></li>
+            <li class="tab col"><a href="#nextsunday">ВС</a></li>
+          </ul>
+          <div id="nextmonday">
+            <div class="for-textolite">Понедельник</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nexttuesday">
+            <div class="for-textolite">Вторник</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nextwednesday">
+            <div class="for-textolite">Среда</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nextthursday">
+            <div class="for-textolite">Четверг</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nextfriday">
+            <div class="for-textolite">Пятница</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nextsaturday">
+            <div class="for-textolite">Суббота</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="nextsunday">
+            <div class="for-textolite">Воскресенье</div>
+            <div class="days">
+              <div class="day__item">
+                <h3>Завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Второй завтрак</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Обед</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Полдник</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+              <div class="day__item">
+                <h3>Ужин</h3>
+                <ul>
+                  <li>Блюдо</li>
+                  <li class="desc">описание</li>
+                  <li>Пищ.ценность</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s4 footer-navigation">
+          <div class="footer-menu">
+            <h2>МЕНЮ</h2>
+            <ul>
+              <li><a href="/planone"><span class="planOneName"></span></a>
+              </li>
+              <li><a href="/plantwo"><span class="planTwoName"></span></a>
+              </li>
+              <li><a href="/planthree"><span class="planThreeName"></span></a>
+              </li>
+              <li><a href="/planfour"><span class="planFourName"></span><img class="vegan-img"
+                    src="./images/icons/leaf.svg" alt="vegan"></a>
+              </li>
+              <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a>
                             </li> -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col s4 ">
-                    <div class="footer-menu">
-                        <h2>КОНТАКТЫ</h2>
-                        <p>г.Гродно, ул. Тимирязева<br> д.10, к.1, оф. 18</p>
-                        <p>ООО «ЧИПОТЛЕ» <br> УНП: 59103847</p>
-                        <p><a href="tel:+375298674444">Тел: +375 (29) 867-44-44</a> <br>
-                           <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a></p>
-                    </div>
-                </div>
-
-
-            </div>
+            </ul>
+          </div>
         </div>
-        <div class="lower-footer">
-            <div class="container">
-              <p>© 2019. Все права защищены. <a href="/dostavka">Условия доставки </a> <a href="/pravila">Правила пользования</a></p>
-            </div>
+        <div class="col s4 ">
+          <div class="footer-menu">
+            <h2>КОНТАКТЫ</h2>
+            <p>г.Гродно, ул. Тимирязева<br> д.10, к.1, оф. 18</p>
+            <p>ООО «ЧИПОТЛЕ» <br> УНП: 59103847</p>
+            <p><a href="tel:+375298674444">Тел: +375 (29) 867-44-44</a> <br>
+              <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a></p>
+          </div>
         </div>
-    </footer>
 
-    <div id="thanks" class="modal">
-      <div class="modal-content">
-        <h4>Заявка принята.</h4>
-        <p>В ближайшее время с Вами свяжется наш менеджер.</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="modal-close waves-effect waves-green btn-flat">Хорошо</a>
+
       </div>
     </div>
-  
-    <div id="callback" class="modal w-30">
-      <div class="modal-content">
-        <h4>Оставьте заявку</h4>
-        <blockquote>
-          И наш менеджер свяжется с вами!
-        </blockquote>
-        <form class="col s12" action="recall.php" data-ajax="true" method="post">
-          <div class="input-field col s12">
-            <input class="nameForm validate" id="nameForm" name="name" type="text" required>
-            <label class="active" for="nameForm">Ваше имя</label>
-          </div>
-          <div class="input-field col s12">
-            <input type="tel" id="phoneForm" name="phone" class="phoneForm validate" data-mask="+375(00) 000-00-00"
-              required>
-            <label class="active" for="phoneForm">Телефон</label>
-          </div>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
-            <i class="material-icons right">send</i>
-          </button>
-        </form>
+    <div class="lower-footer">
+      <div class="container">
+        <p>© 2019. Все права защищены. <a href="/dostavka">Условия доставки </a> <a href="/pravila">Правила
+            пользования</a></p>
       </div>
-  
     </div>
-    <!--  Scripts-->
-    <script src="./settings.json"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/init.js"></script>
+  </footer>
+
+  <div id="thanks" class="modal">
+    <div class="modal-content">
+      <h4>Заявка принята.</h4>
+      <p>В ближайшее время с Вами свяжется наш менеджер.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-close waves-effect waves-green btn-flat">Хорошо</a>
+    </div>
+  </div>
+
+  <div id="callback" class="modal w-30">
+    <div class="modal-content">
+      <h4>Оставьте заявку</h4>
+      <blockquote>
+        И наш менеджер свяжется с вами!
+      </blockquote>
+      <form class="col s12" action="recall.php" data-ajax="true" method="post">
+        <div class="input-field col s12">
+          <input class="nameForm validate" id="nameForm" name="name" type="text" required>
+          <label class="active" for="nameForm">Ваше имя</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="tel" id="phoneForm" name="phone" class="phoneForm validate" data-mask="+375(00) 000-00-00"
+            required>
+          <label class="active" for="phoneForm">Телефон</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+  <!--  Scripts-->
+  <script src="./settings.json"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
