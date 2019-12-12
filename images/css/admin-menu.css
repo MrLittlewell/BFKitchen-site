@@ -1,0 +1,14 @@
+#editor_holder {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* #editor_holder>div>h3,
+#editor_holder>div>div.panel>div>div>div:nth-child(1)>div>div:nth-child(3)>div:nth-child(3)>h3,
+#editor_holder>div>div.panel>div>div>div:nth-child(1)>div>div:nth-child(3)>div:nth-child(3)>div.panel>div>div>div:nth-child(1)>div>div:nth-child(3)>div:nth-child(3)>h3 {
+  display: none;
+} */
+
+/* select {
+  display: none !important;
+} */

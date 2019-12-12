@@ -1,1 +1,188 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="cart/style.682f6044.css"><link rel="stylesheet" href="cart/App.66694ab2.css"></head><body> <div id="react-cart"></div> <script src="cart/App.a0d8ffd7.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Заказ | BF kitchen | Здоровое питание в Гродно</title>
+  <meta name="description" content="Доставка правильного питания к вам в дом. Правильное питание - залог здоровья!" />
+  <link rel="canonical" href="https://bfkitchen.by/" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="../css/nice-select.css">
+  <link rel="stylesheet" href="./App.9cb242d2.css">
+  <link rel="stylesheet" href="./style.682f6044.css">
+
+  <script src="../js/jsondata.js"></script>
+</head>
+
+<body onload="load()">
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="top-header">
+        <div class="left-menu">
+          <div class="container-fluid">
+            <div class="top-left-navigation">
+              <div class="top-navigation">
+                <ul>
+                  <li>
+                    <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#">ДОСТАВКА</a>
+                  </li> -->
+                  <!-- <li>
+                      <a href="#">КОНСУЛЬТАЦИЯ ДИЕТОЛОГА</a>
+                  </li> -->
+                  <li>
+                    <a class="waves-effect waves-light modal-trigger" href="#callback">ПЕРЕЗВОНИТЕ МНЕ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="top-right-social-icons">
+              <div class="top-right-menu">
+                <div class="social-icons">
+                  <a href="#" target="_blank"><img src="../images/icons/telegram.svg" width="17" height="17"></a>
+                  <a href="https://www.facebook.com/Bfkitchenby-100219991476826/" target="_blank"><img
+                      src="../images/icons/facebook.svg" width="17" height="17"></a>
+                  <a href="https://www.instagram.com/bfkitchen.by/" target="_blank"><img
+                      src="../images/icons/instagram.svg" width="17" height="17"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-wrapper container-fluid">
+        <div>
+          <ul id="nav-mobile" class="side-nav">
+            <span class="menu-logo">
+              Menu
+            </span>
+            <li><a href="./planone"><span class="planOneName"></span></a></li>
+            <li><a href="./plantwo"><span class="planTwoName"></span></a></li>
+            <li><a href="./planthree"><span class="planThreeName"></span></a></li>
+            <li><a href="./planfour"><span class="planFourName"></span><img class="vegan-img"
+                  src="../images/icons/leaf.svg" alt="vegan"></a></li>
+            <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a></li> -->
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse hamburger-icon"><i
+              class="material-icons">menu</i>
+            Меню
+          </a>
+        </div>
+        <div>
+          <a id="logo-container" href="/" class="brand-logo"><img src="../images/logo-svg.svg" alt="logo"></a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="../images/icons/shopping-cart.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <h4 style="color: brown; margin-top: 80px;">Заявки временно не обрабатываются, сайт в режиме тестирования :)</h4>
+    <div id="react-cart"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s4 footer-navigation">
+          <div class="footer-menu">
+            <h2>МЕНЮ</h2>
+            <ul>
+              <li><a href="../planone"><span class="planOneName"></span></a>
+              </li>
+              <li><a href="../plantwo"><span class="planTwoName"></span></a>
+              </li>
+              <li><a href="../planthree"><span class="planThreeName"></span></a>
+              </li>
+              <li><a href="../planfour"><span class="planFourName"></span><img class="vegan-img"
+                    src="../images/icons/leaf.svg" alt="vegan"></a>
+              </li>
+              <!-- <li><a href="./planfive.html"><span class="planFiveName"></span></a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col s4 ">
+          <div class="footer-menu">
+            <h2>КОНТАКТЫ</h2>
+            <p>г.Гродно, ул. Тимирязева<br> д.10, к.1, оф. 18</p>
+            <p>ООО «ЧИПОТЛЕ» <br> УНП: 59103847</p>
+            <p><a href="tel:+375298674444">Тел: +375 (29) 867-44-44</a> <br>
+              <a href="mailto:bfkitchen.grodno@gmail.com">bfkitchen.grodno@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower-footer">
+      <div class="container">
+        <p>© 2019. Все права защищены. <a href="../dostavka">Условия доставки </a> <a href="../pravila">Правила
+            пользования</a></p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="thanks" class="modal">
+    <div class="modal-content">
+      <h4>Спасибо за заказ!</h4>
+      <p>Заявка принята. В ближайшее время с Вами свяжется наш менеджер.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="modal-close waves-effect waves-green btn-flat">Хорошо</a>
+    </div>
+  </div>
+
+  <div id="callback" class="modal w-30">
+    <div class="modal-content">
+      <h4>Оставьте заявку</h4>
+      <blockquote>
+        И наш менеджер свяжется с вами!
+      </blockquote>
+      <form class="col s12" action="recall.php" data-ajax="true" method="post">
+        <div class="input-field col s12">
+          <input class="nameForm validate" id="nameForm" name="name" type="text" required>
+          <label class="active" for="nameForm">Ваше имя</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="tel" id="phoneForm" name="phone" class="phoneForm validate" data-mask="+375(00) 000-00-00"
+            required>
+          <label class="active" for="phoneForm">Телефон</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Отправить
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+  <!--  Scripts-->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.nice-select.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/parallax.js"></script>
+  <script src="./App.db92c155.js"></script>
+  <script src="../js/jquery.mask.js"></script>
+  <script src="../js/init.js"></script>
+  <script>
+    $(document).ready(function () {
+      // if ($(window).width() >= 960) {
+      //   $('select').niceSelect();
+      // }
+      // $('.react-datepicker__input-container input').attr("required", "")
+      // $('#comment').attr("required","false")
+
+    });
+  </script>
+
+</body>

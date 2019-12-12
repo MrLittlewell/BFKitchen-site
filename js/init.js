@@ -45,7 +45,7 @@ $('.collapsible li a').click(function () {
   }
   let costToJson = JSON.stringify(currentCost);
   localStorage.setItem("localPrice", costToJson);
-  document.location.replace("/cart.html");
+  document.location.replace("https://bfkitchen.by/cart/");
 })
 
 $('.lower-inner').hover(
@@ -67,7 +67,7 @@ $('.our-program-section').hover(
 
 $('.lower-inner a').click(function () {
   let costValue = +$('.lower-inner.hover .cost').html()
-  let planName = $('.blog-post-inner-title h2').html()
+  let planName = $('.our-program-section.hover .blog-post-inner-title h2').html()
   let dayCount = $('.lower-inner.hover p').html()
 
   let currentCost = {
@@ -77,7 +77,7 @@ $('.lower-inner a').click(function () {
   }
   let costToJson = JSON.stringify(currentCost);
   localStorage.setItem("localPrice", costToJson);
-  document.location.replace("/cart.html");
+  document.location.replace("https://bfkitchen.by/cart/");
 })
 
 $('#order-form').submit(function (event) {
@@ -137,6 +137,8 @@ $('#callback form').submit(function (event) {
 });
 
 $('#phoneForm').mask('+375(00) 000-00-00');
+
+$('#cart-phone').mask('+375(00) 000-00-00');
 
 $('.react-datepicker__input-container input').focus(function (e) {
   e.preventDefault();

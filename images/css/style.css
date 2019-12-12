@@ -1232,7 +1232,7 @@ blockquote {
 
 #options-tabs>div>div.col.s8>p {
   font-size: 14px;
-  width: 90%;
+  width: 50%;
   color: var(--dark-blue);
 }
 
@@ -1241,28 +1241,16 @@ blockquote {
 }
 
 #anketdiet input {
-  border-bottom: 1px solid var(--dark-blue);
-  color: var(--dark-blue);
+  border-bottom: 1px solid #fafafa;
+  color: #fafafa;
 }
 
 #anketdiet label {
-  color: var(--dark-blue);
+  color: #fafafa;
 }
 
 .custext h3 {
   color: #3d9445;
-}
-
-.menus .day__item li.desc {
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.banner-inner-content .container {
-  background: #ffffff70;
-  padding: 20px;
-  border-radius: 20px;
-  color: #03404f;
 }
 
 @media (max-width: 1400px) {
@@ -1274,14 +1262,9 @@ blockquote {
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 10px 0 0;
   }
-
-  .background-image img {
-    max-width: 750px;
-  }
-
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;
@@ -1291,27 +1274,12 @@ blockquote {
   .our-program-section .blog-post .blog-lower-detail .lower-inner .meat-button .btn {
     margin: 10px 0 0;
   }
-
 }
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
     left: auto;
     transform: none;
-  }
-}
-
-@media (max-width: 900px) and (orientation: landscape) {
-  .banner-content {
-    margin-top: 20px;
-  }
-
-  .banner-content h1 {
-    font-size: 30px;
-  }
-
-  .background-image img {
-    max-width: 700px;
   }
 }
 
@@ -1477,7 +1445,7 @@ blockquote {
   }
 
   #main-first-section {
-    /* background-position: 42% !important; */
+    background-position: 42% !important;
   }
 
   .our-contact-form-section {
@@ -1759,28 +1727,6 @@ blockquote {
 
   .meat-button {
     margin-left: 20px;
-  }
-}
-
-@media (max-width: 800px) and (orientation: landscape) {
-  .banner-content {
-    margin-top: 20px;
-  }
-
-  .banner-content h1 {
-    font-size: 30px;
-  }
-
-  #main-first-section {
-    height: 130vh;
-  }
-
-  .background-image img {
-    max-width: 420px;
-  }
-
-  .background-image {
-    position: absolute;
   }
 }
 
