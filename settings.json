@@ -2,27 +2,27 @@
   "settings": {
     "planOne": {
       "name": "#Лайт1400",
-      "priceTwoDay": 10,
-      "priceFiveDay": 15,
-      "priceSevenDay": 20
+      "priceTwoDay": 60,
+      "priceFiveDay": 120,
+      "priceSevenDay": 180
     },
     "planTwo": {
       "name": "#Баланс2000",
-      "priceTwoDay": 15,
-      "priceFiveDay": 20,
-      "priceSevenDay": 25
+      "priceTwoDay": 60,
+      "priceFiveDay": 120,
+      "priceSevenDay": 180
     },
     "planThree": {
       "name": "#Мощные2500",
-      "priceTwoDay": 20,
-      "priceFiveDay": 25,
-      "priceSevenDay": 30
+      "priceTwoDay": 60,
+      "priceFiveDay": 120,
+      "priceSevenDay": 180
     },
     "planFour": {
       "name": "#Vegan",
-      "priceTwoDay": 25,
-      "priceFiveDay": 30,
-      "priceSevenDay": 35
+      "priceTwoDay": 60,
+      "priceFiveDay": 120,
+      "priceSevenDay": 180
     },
     "planFive": {
       "name": "#ПланПять",

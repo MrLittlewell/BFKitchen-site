@@ -1258,6 +1258,13 @@ blockquote {
   font-weight: normal;
 }
 
+.banner-inner-content .container {
+  background: #ffffff70;
+  padding: 20px;
+  border-radius: 20px;
+  color: #03404f;
+}
+
 @media (max-width: 1400px) {
   .our-program-section .blog-post .blog-lower-detail .lower-inner {
     flex-direction: column;

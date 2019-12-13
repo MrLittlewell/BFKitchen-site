@@ -24,7 +24,7 @@ $message = "Имя: $name
  \nДоставка: $delivery
  \nОплата: $type
  \nПромокод: $promo
- \nПлан на: $day
+ \nПлан: $day
  \nСумма: $price рублей";
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";

@@ -67,7 +67,7 @@ $('.our-program-section').hover(
 
 $('.lower-inner a').click(function () {
   let costValue = +$('.lower-inner.hover .cost').html()
-  let planName = $('.blog-post-inner-title h2').html()
+  let planName = $('.our-program-section.hover .blog-post-inner-title h2').html()
   let dayCount = $('.lower-inner.hover p').html()
 
   let currentCost = {
